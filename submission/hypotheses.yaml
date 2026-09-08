@@ -1,0 +1,11 @@
+# Ranked hypothesis set -- REPLACE the baseline values with your own.
+# Rank all six candidates with a posterior probability / weight (summing ~1) and a short
+# justification. If two are genuinely inseparable on the released data, say so and weight
+# them accordingly -- honest ranking scores better than confident guessing.
+ranking:
+  - {model: M1, weight: 0.17, justification: "placeholder -- replace"}
+  - {model: M2, weight: 0.17, justification: "placeholder -- replace"}
+  - {model: M3, weight: 0.17, justification: "placeholder -- replace"}
+  - {model: M4, weight: 0.17, justification: "placeholder -- replace"}
+  - {model: M5, weight: 0.16, justification: "placeholder -- replace"}
+  - {model: M6, weight: 0.16, justification: "placeholder -- replace"}
