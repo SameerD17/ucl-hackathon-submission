@@ -9,12 +9,17 @@ install:
 
 # write submission/predictions.csv for the held-out conditions
 predict:
-    python baseline/predict.py
+    python predict_system_b.py
 
 # write submission/campaign.yaml (the experiments you would run next)
 suggest:
-    python baseline/suggest.py
+    python suggest_campaign.py
 
 # regenerate every figure used in the presentation
 replicate:
-    python baseline/replicate.py
+    python replicate_figures.py
+
+
+
+
+    python suggest_campaign.py --figures-only

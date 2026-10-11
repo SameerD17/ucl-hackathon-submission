@@ -1,0 +1,61 @@
+{
+  "hypotheses": 6,
+  "weight_sum": 1.0,
+  "predictive_weights": {
+    "M4": 0.5,
+    "M2": 0.5,
+    "M1": 0.0,
+    "M5": 0.0,
+    "M3": 0.0,
+    "M6": 0.0
+  },
+  "prediction_rows": 384,
+  "heldout_runs": 12,
+  "campaign_budget": {
+    "experiments": 3,
+    "A_consumed_g": 3.125,
+    "A_budget_g": 5.0,
+    "A_remaining_g": 1.875,
+    "analytical_samples": 21,
+    "sample_budget": 60,
+    "unused_samples": 39,
+    "vessel_mL": 5.0,
+    "all_constraints_passed": true
+  },
+  "required_figures": 16,
+  "pinned_dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "pyyaml": "6.0.3"
+  },
+  "saved_fitting_files": 9,
+  "all_file_checks_passed": true,
+  "workflow_commands": [
+    {
+      "command": "just install",
+      "seconds": 7.000717499999155,
+      "exit_code": 0
+    },
+    {
+      "command": "just predict",
+      "seconds": 26.133264300002338,
+      "exit_code": 0
+    },
+    {
+      "command": "just suggest",
+      "seconds": 106.89447089999885,
+      "exit_code": 0
+    },
+    {
+      "command": "just replicate",
+      "seconds": 71.13845399999991,
+      "exit_code": 0
+    }
+  ],
+  "total_workflow_seconds": 211.16754990000118,
+  "within_ten_minutes": true,
+  "python_version": "3.13.7",
+  "scope": "working-copy file and workflow checks; not a scientific-validation guarantee or a completed presentation"
+}

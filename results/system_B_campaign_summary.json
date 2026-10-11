@@ -1,0 +1,521 @@
+{
+  "design_stage": "proposed experiments; no new experimental outcomes available",
+  "source_sha256": {
+    "suggest_campaign.py": "848549c10e6a0328fb8565a8a30464903368a9f92b6b4d6aed4ed5feb87e9ebd",
+    "predict_system_b.py": "9752eac6193b54900c6c07a559aeaf08caf1348acb05be26d1e95e8cf8de541c",
+    "fit_system_b.py": "bbfc6ca9c0d2bc910a48597b2b23da9770e38b361cd93d71e531ea8981d7f0aa",
+    "load_system_b.py": "dda3ad0bd3e957019c032f6b1a24fea7763949d0e1f8085bc9ea7db10b441870",
+    "src/candidates/models.py": "f587f39054cd9466ec053319e6c40f6305e35ea7c7c9a3a73a8e4dbf073d9ecb",
+    "src/candidates/simulate.py": "210b6385add731d53b438743e6c6cd9c7b463ca668ffbd8f0bce3ab6df54653b",
+    "data/system_B/measurements.csv": "b401d7f8e18b6947234974a3a7241b2c350568eefa2a52cf3d8f6710036563ff",
+    "results/system_B_fits.json": "1ab4778db6b57422667da376f3074be43e6d9ea60a2a8c336cb9854a664cea4a"
+  },
+  "artifact_sha256": {
+    "submission/campaign.yaml": "6c725959d6651b7e58fbc2e7090c15c21b5826010e08d1f15b8a146ed6faf605",
+    "results/system_B_campaign_candidates.csv": "4338f5c0bf0cf44602540a9b19c6c03f15f8b3e177210c31315a6a1a3e7a6264",
+    "results/system_B_campaign_predictions.csv": "07c4f901a3473af59cb26066fcf4fa2b2e46f4da7b124572c221a16e939061c8"
+  },
+  "charge_grid_M": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5
+  ],
+  "time_grid_min": [
+    0.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0,
+    30.0,
+    45.0,
+    60.0,
+    90.0,
+    120.0,
+    180.0,
+    240.0,
+    360.0,
+    480.0,
+    720.0,
+    960.0
+  ],
+  "search_temperature_C": 75.0,
+  "search": {
+    "n_screened_conditions": 27,
+    "n_feasible_triples": 525,
+    "selected_screening_score": 58.400266364523496,
+    "selection_rule": "highest summed marginal censored-normal Bhattacharyya score among feasible role-constrained triples"
+  },
+  "budget": {
+    "experiments": 3,
+    "A_consumed_g": 3.125,
+    "A_budget_g": 5.0,
+    "A_remaining_g": 1.875,
+    "analytical_samples": 21,
+    "sample_budget": 60,
+    "unused_samples": 39,
+    "vessel_mL": 5.0,
+    "all_constraints_passed": true
+  },
+  "selected_candidates": [
+    {
+      "candidate_id": "C17",
+      "role": "A-depleted",
+      "temperature_C": 75.0,
+      "A0_M": 0.5,
+      "B0_M": 1.5,
+      "A_consumed_g": 0.625,
+      "sample_times_min": [
+        0.0,
+        20.0,
+        60.0,
+        360.0,
+        480.0,
+        720.0,
+        960.0
+      ],
+      "screening_score": 32.69343399187088,
+      "Q_screening_score": 32.69308938425279,
+      "M2_final_Q_M": 0.0005131972651003111,
+      "M4_final_Q_M": 5.6574695552706e-05,
+      "M2_final_Q_below_LOQ_probability": 4.827016866287448e-09,
+      "M4_final_Q_below_LOQ_probability": 0.13180173925413213,
+      "run_id": "E1"
+    },
+    {
+      "candidate_id": "C14",
+      "role": "balanced",
+      "temperature_C": 75.0,
+      "A0_M": 0.5,
+      "B0_M": 0.5,
+      "A_consumed_g": 0.625,
+      "sample_times_min": [
+        0.0,
+        30.0,
+        120.0,
+        360.0,
+        480.0,
+        720.0,
+        960.0
+      ],
+      "screening_score": 21.383985929403813,
+      "Q_screening_score": 21.383542491849003,
+      "M2_final_Q_M": 0.0004784156002096402,
+      "M4_final_Q_M": 0.0001149463112328673,
+      "M2_final_Q_below_LOQ_probability": 6.67086468826133e-09,
+      "M4_final_Q_below_LOQ_probability": 0.0014647139685053843,
+      "run_id": "E2"
+    },
+    {
+      "candidate_id": "C25",
+      "role": "A-rich",
+      "temperature_C": 75.0,
+      "A0_M": 1.5,
+      "B0_M": 0.25,
+      "A_consumed_g": 1.875,
+      "sample_times_min": [
+        0.0,
+        20.0,
+        60.0,
+        360.0,
+        480.0,
+        720.0,
+        960.0
+      ],
+      "screening_score": 4.322846443248798,
+      "Q_screening_score": 4.322592444215466,
+      "M2_final_Q_M": 0.0002565986330129335,
+      "M4_final_Q_M": 0.00040829597181371287,
+      "M2_final_Q_below_LOQ_probability": 4.738252989150354e-07,
+      "M4_final_Q_below_LOQ_probability": 1.500660592024541e-08,
+      "run_id": "E3"
+    }
+  ],
+  "parameter_uncertainty": {
+    "M2": {
+      "model": "M2",
+      "training_run_ids": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5"
+      ],
+      "parameter_order": [
+        "k1",
+        "Ea1",
+        "k2",
+        "Ea2",
+        "k3",
+        "Ea3"
+      ],
+      "coordinate_definition": "log10(k at 75 C); Ea in kJ/mol divided by 50",
+      "center": [
+        -1.5183860881766964,
+        1.3240803999148243,
+        -1.6959381180852109,
+        1.156258549788748,
+        -4.68417779852078,
+        1.1339098209742693
+      ],
+      "covariance": [
+        [
+          3.0202250362703998e-05,
+          -6.486885972318679e-06,
+          -2.4939959773237255e-05,
+          1.2191744647061576e-05,
+          -2.4814121313430957e-05,
+          1.1885430486627726e-05
+        ],
+        [
+          -6.486885972318679e-06,
+          0.0013071260350425234,
+          1.2293182076337666e-05,
+          -0.0010842732595469956,
+          1.1899590270289873e-05,
+          -0.0010773510205054316
+        ],
+        [
+          -2.4939959773237258e-05,
+          1.2293182076337664e-05,
+          9.908078879853504e-05,
+          -5.088277374606896e-05,
+          9.092849347418821e-05,
+          -4.134418428785167e-05
+        ],
+        [
+          1.2191744647061571e-05,
+          -0.0010842732595469956,
+          -5.088277374606895e-05,
+          0.004259795437125153,
+          -4.195588253920485e-05,
+          0.003918988711244624
+        ],
+        [
+          -2.481412131343095e-05,
+          1.1899590270289877e-05,
+          9.09284934741882e-05,
+          -4.195588253920485e-05,
+          0.0005741241856945461,
+          -0.0006289334081777103
+        ],
+        [
+          1.1885430486627721e-05,
+          -0.0010773510205054318,
+          -4.1344184287851664e-05,
+          0.003918988711244624,
+          -0.0006289334081777103,
+          0.026695337068028797
+        ]
+      ],
+      "coordinate_sd": [
+        0.005495657409510167,
+        0.036154198027926486,
+        0.009953933333036496,
+        0.06526710838642351,
+        0.023960888666628082,
+        0.16338707742055
+      ],
+      "minimum_hessian_eigenvalue": 36.450820427304194,
+      "hessian_condition_number": 1243.7552478804814,
+      "max_relative_SD_change_on_halving_step": 4.306230984829629e-05,
+      "max_scaled_covariance_change_on_halving_step": 8.612276533404859e-05,
+      "closest_parameter_bound_in_marginal_SD": 6.940021444019365,
+      "training_negative_log_likelihood": -650.2589582097064
+    },
+    "M4": {
+      "model": "M4",
+      "training_run_ids": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5"
+      ],
+      "parameter_order": [
+        "k1",
+        "Ea1",
+        "k2",
+        "Ea2",
+        "k3",
+        "Ea3"
+      ],
+      "coordinate_definition": "log10(k at 75 C); Ea in kJ/mol divided by 50",
+      "center": [
+        -1.5183652174001077,
+        1.3242108443576825,
+        -1.6961468930225672,
+        1.156518876113256,
+        -4.593360747520873,
+        1.1409788490515242
+      ],
+      "covariance": [
+        [
+          3.019865518977181e-05,
+          -6.469891211345071e-06,
+          -2.4926226746068378e-05,
+          1.2157471195598206e-05,
+          -2.2661473252049123e-05,
+          1.1101072527560893e-05
+        ],
+        [
+          -6.4698912113450694e-06,
+          0.001306844425299895,
+          1.2257247707996459e-05,
+          -0.0010835566560466478,
+          1.109998398825273e-05,
+          -0.000983566807065267
+        ],
+        [
+          -2.492622674606837e-05,
+          1.2257247707996459e-05,
+          9.901223159765576e-05,
+          -5.04321022705633e-05,
+          8.617819910365038e-05,
+          -3.627425160110894e-05
+        ],
+        [
+          1.2157471195598206e-05,
+          -0.0010835566560466478,
+          -5.043210227056331e-05,
+          0.0042563199860608325,
+          -3.707514351766491e-05,
+          0.003713324489793697
+        ],
+        [
+          -2.266147325204912e-05,
+          1.1099983988252722e-05,
+          8.61781991036504e-05,
+          -3.70751435176649e-05,
+          0.0005571342539315841,
+          -0.0005865851612470782
+        ],
+        [
+          1.110107252756089e-05,
+          -0.0009835668070652668,
+          -3.6274251601108924e-05,
+          0.0037133244897936974,
+          -0.0005865851612470782,
+          0.025932326939715946
+        ]
+      ],
+      "coordinate_sd": [
+        0.0054953303076131655,
+        0.03615030325322175,
+        0.009950489012991058,
+        0.0652404781256302,
+        0.02360369153186815,
+        0.16103517298936884
+      ],
+      "minimum_hessian_eigenvalue": 37.57109890783693,
+      "hessian_condition_number": 1207.5226458479688,
+      "max_relative_SD_change_on_halving_step": 0.0001207700069862927,
+      "max_scaled_covariance_change_on_halving_step": 0.0002415545993672416,
+      "closest_parameter_bound_in_marginal_SD": 7.085277258818786,
+      "training_negative_log_likelihood": -650.3069735410544
+    }
+  },
+  "simulation_forecasts": [
+    {
+      "scenario": "proposed_nominal",
+      "parameter_SD_multiplier": 1.0,
+      "Q_assay_SD_multiplier": 1.0,
+      "integration_draws_per_model": 128,
+      "simulations_per_true_model": 256,
+      "model_comparison_weights": {
+        "M2": 0.5,
+        "M4": 0.5
+      },
+      "parameter_bound_rejections": {
+        "M2": 0,
+        "M4": 0
+      },
+      "mean_fraction_correct": 1.0,
+      "by_true_model": [
+        {
+          "true_model_in_simulation": "M2",
+          "simulated_campaigns": 256,
+          "correct_selections": 256,
+          "fraction_correct": 1.0,
+          "true_model_log_score_advantage_5th_percentile": 790.4430732332921,
+          "true_model_log_score_advantage_median": 1081.5362174920588,
+          "mean_number_of_censored_Q_results": 3.734375
+        },
+        {
+          "true_model_in_simulation": "M4",
+          "simulated_campaigns": 256,
+          "correct_selections": 256,
+          "fraction_correct": 1.0,
+          "true_model_log_score_advantage_5th_percentile": 141.4526670682775,
+          "true_model_log_score_advantage_median": 162.87609574082967,
+          "mean_number_of_censored_Q_results": 5.0390625
+        }
+      ],
+      "interpretation": "simulation forecast conditional on these two mechanisms and the stated local uncertainty/error assumptions; not observed validation accuracy"
+    },
+    {
+      "scenario": "proposed_stress",
+      "parameter_SD_multiplier": 2.0,
+      "Q_assay_SD_multiplier": 1.5,
+      "integration_draws_per_model": 128,
+      "simulations_per_true_model": 256,
+      "model_comparison_weights": {
+        "M2": 0.5,
+        "M4": 0.5
+      },
+      "parameter_bound_rejections": {
+        "M2": 1,
+        "M4": 0
+      },
+      "mean_fraction_correct": 1.0,
+      "by_true_model": [
+        {
+          "true_model_in_simulation": "M2",
+          "simulated_campaigns": 256,
+          "correct_selections": 256,
+          "fraction_correct": 1.0,
+          "true_model_log_score_advantage_5th_percentile": 279.2800699355139,
+          "true_model_log_score_advantage_median": 434.11296259424284,
+          "mean_number_of_censored_Q_results": 3.5
+        },
+        {
+          "true_model_in_simulation": "M4",
+          "simulated_campaigns": 256,
+          "correct_selections": 256,
+          "fraction_correct": 1.0,
+          "true_model_log_score_advantage_5th_percentile": 62.03635564566957,
+          "true_model_log_score_advantage_median": 75.03115731176554,
+          "mean_number_of_censored_Q_results": 5.359375
+        }
+      ],
+      "interpretation": "simulation forecast conditional on these two mechanisms and the stated local uncertainty/error assumptions; not observed validation accuracy"
+    },
+    {
+      "scenario": "historical_charge_reference",
+      "parameter_SD_multiplier": 1.0,
+      "Q_assay_SD_multiplier": 1.0,
+      "integration_draws_per_model": 128,
+      "simulations_per_true_model": 256,
+      "model_comparison_weights": {
+        "M2": 0.5,
+        "M4": 0.5
+      },
+      "parameter_bound_rejections": {
+        "M2": 0,
+        "M4": 0
+      },
+      "mean_fraction_correct": 0.533203125,
+      "by_true_model": [
+        {
+          "true_model_in_simulation": "M2",
+          "simulated_campaigns": 256,
+          "correct_selections": 122,
+          "fraction_correct": 0.4765625,
+          "true_model_log_score_advantage_5th_percentile": -0.998119634638897,
+          "true_model_log_score_advantage_median": -0.04713153531619696,
+          "mean_number_of_censored_Q_results": 3.890625
+        },
+        {
+          "true_model_in_simulation": "M4",
+          "simulated_campaigns": 256,
+          "correct_selections": 151,
+          "fraction_correct": 0.58984375,
+          "true_model_log_score_advantage_5th_percentile": -0.967428602308587,
+          "true_model_log_score_advantage_median": 0.17263892098304723,
+          "mean_number_of_censored_Q_results": 3.64453125
+        }
+      ],
+      "interpretation": "simulation forecast conditional on these two mechanisms and the stated local uncertainty/error assumptions; not observed validation accuracy"
+    }
+  ],
+  "reference_experiments": [
+    {
+      "run_id": "R1",
+      "temperature_C": 65.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times_min": [
+        0.0,
+        30.0,
+        90.0,
+        180.0,
+        360.0,
+        600.0,
+        960.0
+      ],
+      "assay": [
+        "A",
+        "B",
+        "P",
+        "Q"
+      ]
+    },
+    {
+      "run_id": "R2",
+      "temperature_C": 75.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times_min": [
+        0.0,
+        30.0,
+        90.0,
+        180.0,
+        360.0,
+        600.0,
+        960.0
+      ],
+      "assay": [
+        "A",
+        "B",
+        "P",
+        "Q"
+      ]
+    },
+    {
+      "run_id": "R3",
+      "temperature_C": 85.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times_min": [
+        0.0,
+        30.0,
+        90.0,
+        180.0,
+        360.0,
+        600.0,
+        960.0
+      ],
+      "assay": [
+        "A",
+        "B",
+        "P",
+        "Q"
+      ]
+    }
+  ],
+  "reference_budget": {
+    "experiments": 3,
+    "A_consumed_g": 3.75,
+    "A_budget_g": 5.0,
+    "A_remaining_g": 1.25,
+    "analytical_samples": 21,
+    "sample_budget": 60,
+    "unused_samples": 39,
+    "vessel_mL": 5.0,
+    "all_constraints_passed": true
+  },
+  "random_seed": 271828,
+  "limitations": [
+    "A role-constrained finite-grid heuristic, not a globally optimal continuous or Bayesian design.",
+    "Marginal screening distances are not additive joint information when parameters are shared; the separate joint simulation audit addresses this dependence approximately.",
+    "Simulation forecasts are conditional on M2/M4 and local normal parameter uncertainty, not observed success rates or guarantees.",
+    "Q's released-run numeric interval coverage was 15/18; the stress scenario is sensitivity analysis, not a proven recalibration.",
+    "Gaussian independent assay errors are assumed before Q censoring; additional zero clipping and correlated assay error are not modelled.",
+    "Exactly three runs at 75 C target stoichiometric discrimination; temperature dependence and independent run-to-run replication are not tested by this campaign.",
+    "No future outcomes feed back into predictions, ranking or the committed block of experiments.",
+    "No inference about isolated-API mass impurity compliance follows from molar concentration ratios alone."
+  ]
+}

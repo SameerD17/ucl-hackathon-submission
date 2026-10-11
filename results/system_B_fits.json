@@ -1,0 +1,302 @@
+{
+  "system": "B",
+  "stage": "provisional training-data comparison",
+  "source_sha256": "b401d7f8e18b6947234974a3a7241b2c350568eefa2a52cf3d8f6710036563ff",
+  "fitter_sha256": "bbfc6ca9c0d2bc910a48597b2b23da9770e38b361cd93d71e531ea8981d7f0aa",
+  "training_run_ids": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5"
+  ],
+  "elapsed_fitting_seconds": 68.60851809999804,
+  "noise_distribution_assumption": "Independent Gaussian assay errors before Q reporting censoring",
+  "noise_sd": "sqrt((rel*predicted_mean)^2+abs^2), using the documented species-specific constants",
+  "censored_log_likelihood": "log(P(noisy assay < LOQ)) = log_ndtr((LOQ-model_mean)/SD)",
+  "search_bounds": {
+    "rate_at_75C_in_reaction_specific_units": [
+      1e-09,
+      10.0
+    ],
+    "activation_energy_kJ_per_mol": [
+      0.0,
+      180.0
+    ]
+  },
+  "models": {
+    "M1": {
+      "parameters": {
+        "k1": 0.017204194188659445,
+        "Ea1": 66.8592906580562,
+        "k2": 1.6367384990997745e-05,
+        "Ea2": 67.19364750282595
+      },
+      "negative_log_likelihood": 1487.2136116716933,
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "n_parameters": 4,
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "successful_start_nll_span": 111.10103362453196,
+      "parameters_at_bounds": [],
+      "optimality": 0.022692253945777896,
+      "failed_simulation_evaluations": 0,
+      "parameter_units": {
+        "k1": "L mol^-1 min^-1 at 75 C",
+        "Ea1": "kJ/mol",
+        "k2": "L mol^-1 min^-1 at 75 C",
+        "Ea2": "kJ/mol"
+      }
+    },
+    "M2": {
+      "parameters": {
+        "k1": 0.030311952507821052,
+        "Ea1": 66.20401999574122,
+        "k2": 0.020140112026007104,
+        "Ea2": 57.812927489437406,
+        "k3": 2.0692940142003514e-05,
+        "Ea3": 56.695491048713464
+      },
+      "negative_log_likelihood": -650.2589582097064,
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "n_parameters": 6,
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "successful_start_nll_span": 1.830574092309689e-08,
+      "parameters_at_bounds": [],
+      "optimality": 0.0029482720773361887,
+      "failed_simulation_evaluations": 0,
+      "parameter_units": {
+        "k1": "L mol^-1 min^-1 at 75 C",
+        "Ea1": "kJ/mol",
+        "k2": "min^-1 at 75 C",
+        "Ea2": "kJ/mol",
+        "k3": "min^-1 at 75 C",
+        "Ea3": "kJ/mol"
+      }
+    },
+    "M3": {
+      "parameters": {
+        "k1": 0.01731174693480535,
+        "Ea1": 67.11758614234422,
+        "k2": 4.6423444090634445e-06,
+        "Ea2": 1.6316961389746494
+      },
+      "negative_log_likelihood": 1552.6255349129276,
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "n_parameters": 4,
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "successful_start_nll_span": 1.5822895420569694e-06,
+      "parameters_at_bounds": [],
+      "optimality": 0.02416212506986221,
+      "failed_simulation_evaluations": 0,
+      "parameter_units": {
+        "k1": "L mol^-1 min^-1 at 75 C",
+        "Ea1": "kJ/mol",
+        "k2": "min^-1 at 75 C",
+        "Ea2": "kJ/mol"
+      }
+    },
+    "M4": {
+      "parameters": {
+        "k1": 0.03031340923641542,
+        "Ea1": 66.21054221788413,
+        "k2": 0.02013043255664821,
+        "Ea2": 57.8259438056628,
+        "k3": 2.5505817769820655e-05,
+        "Ea3": 57.04894245257621
+      },
+      "negative_log_likelihood": -650.3069735410544,
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "n_parameters": 6,
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "successful_start_nll_span": 1.2423470252542756e-08,
+      "parameters_at_bounds": [],
+      "optimality": 0.001408337688369882,
+      "failed_simulation_evaluations": 0,
+      "parameter_units": {
+        "k1": "L mol^-1 min^-1 at 75 C",
+        "Ea1": "kJ/mol",
+        "k2": "min^-1 at 75 C",
+        "Ea2": "kJ/mol",
+        "k3": "L mol^-1 min^-1 at 75 C",
+        "Ea3": "kJ/mol"
+      }
+    },
+    "M5": {
+      "parameters": {
+        "k1": 0.017307000945929456,
+        "Ea1": 67.10474892009233,
+        "k2": 5.828139647859558e-06,
+        "Ea2": 5.302663796669262
+      },
+      "negative_log_likelihood": 1548.9010372271373,
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "n_parameters": 4,
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "successful_start_nll_span": 2.5063741304620635e-07,
+      "parameters_at_bounds": [],
+      "optimality": 0.007987466017768183,
+      "failed_simulation_evaluations": 0,
+      "parameter_units": {
+        "k1": "L mol^-1 min^-1 at 75 C",
+        "Ea1": "kJ/mol",
+        "k2": "L mol^-1 min^-1 at 75 C",
+        "Ea2": "kJ/mol"
+      }
+    },
+    "M6": {
+      "parameters": {
+        "k1": 0.0011807191812906604,
+        "Ea1": 34.007648461760816,
+        "k2": 9.999999884483902,
+        "Ea2": 81.38278843009856,
+        "k3": 0.0006475727159329678,
+        "Ea3": 3.901676005865639e-05
+      },
+      "negative_log_likelihood": 6408.06256259025,
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "n_parameters": 6,
+      "successful_starts": 4,
+      "attempted_starts": 4,
+      "successful_start_nll_span": 196.53279435624881,
+      "parameters_at_bounds": [
+        "k2",
+        "Ea3"
+      ],
+      "optimality": 47.702662670199096,
+      "failed_simulation_evaluations": 0,
+      "parameter_units": {
+        "k1": "min^-1 at 75 C",
+        "Ea1": "kJ/mol",
+        "k2": "L mol^-1 min^-1 at 75 C",
+        "Ea2": "kJ/mol",
+        "k3": "min^-1 at 75 C",
+        "Ea3": "kJ/mol"
+      }
+    }
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "model": "M4",
+      "n_observations": 161,
+      "n_parameters": 6,
+      "negative_log_likelihood": -650.3069735410544,
+      "AIC": -1288.6139470821088,
+      "AICc": -1288.0684925366543,
+      "BIC": -1270.125520892202,
+      "numeric_standardized_RMS": 0.89928685909249,
+      "successful_starts": 4,
+      "start_NLL_span": 1.2423470252542756e-08,
+      "parameters_at_bounds": "none",
+      "delta_AICc": 0.0,
+      "provisional_Akaike_weight": 0.5120015271601424
+    },
+    {
+      "rank": 2,
+      "model": "M2",
+      "n_observations": 161,
+      "n_parameters": 6,
+      "negative_log_likelihood": -650.2589582097064,
+      "AIC": -1288.5179164194128,
+      "AICc": -1287.9724618739583,
+      "BIC": -1270.029490229506,
+      "numeric_standardized_RMS": 0.8999351516006047,
+      "successful_starts": 4,
+      "start_NLL_span": 1.830574092309689e-08,
+      "parameters_at_bounds": "none",
+      "delta_AICc": 0.09603066269596638,
+      "provisional_Akaike_weight": 0.48799847283985764
+    },
+    {
+      "rank": 3,
+      "model": "M1",
+      "n_observations": 161,
+      "n_parameters": 4,
+      "negative_log_likelihood": 1487.2136116716933,
+      "AIC": 2982.4272233433867,
+      "AICc": 2982.683633599797,
+      "BIC": 2994.7528408033245,
+      "numeric_standardized_RMS": 5.2498296199552605,
+      "successful_starts": 4,
+      "start_NLL_span": 111.10103362453196,
+      "parameters_at_bounds": "none",
+      "delta_AICc": 4270.752126136451,
+      "provisional_Akaike_weight": 0.0
+    },
+    {
+      "rank": 4,
+      "model": "M5",
+      "n_observations": 161,
+      "n_parameters": 4,
+      "negative_log_likelihood": 1548.9010372271373,
+      "AIC": 3105.8020744542746,
+      "AICc": 3106.0584847106848,
+      "BIC": 3118.1276919142124,
+      "numeric_standardized_RMS": 5.321384265956974,
+      "successful_starts": 4,
+      "start_NLL_span": 2.5063741304620635e-07,
+      "parameters_at_bounds": "none",
+      "delta_AICc": 4394.126977247339,
+      "provisional_Akaike_weight": 0.0
+    },
+    {
+      "rank": 5,
+      "model": "M3",
+      "n_observations": 161,
+      "n_parameters": 4,
+      "negative_log_likelihood": 1552.6255349129276,
+      "AIC": 3113.251069825855,
+      "AICc": 3113.5074800822654,
+      "BIC": 3125.576687285793,
+      "numeric_standardized_RMS": 5.325545531416137,
+      "successful_starts": 4,
+      "start_NLL_span": 1.5822895420569694e-06,
+      "parameters_at_bounds": "none",
+      "delta_AICc": 4401.57597261892,
+      "provisional_Akaike_weight": 0.0
+    },
+    {
+      "rank": 6,
+      "model": "M6",
+      "n_observations": 161,
+      "n_parameters": 6,
+      "negative_log_likelihood": 6408.06256259025,
+      "AIC": 12828.1251251805,
+      "AICc": 12828.670579725955,
+      "BIC": 12846.613551370407,
+      "numeric_standardized_RMS": 9.442634983492406,
+      "successful_starts": 4,
+      "start_NLL_span": 196.53279435624881,
+      "parameters_at_bounds": "k2,Ea3",
+      "delta_AICc": 14116.73907226261,
+      "provisional_Akaike_weight": 0.0
+    }
+  ],
+  "limitations": [
+    "The ranking uses the same measurements used for fitting; run-wise validation remains necessary.",
+    "The Gaussian error distribution and independent errors are assumptions, beyond the specified SD formula.",
+    "Numeric zeros are treated as numeric Gaussian observations; sensitivity to reporting/clipping remains to check.",
+    "AICc is an approximate small-sample correction for nonlinear models with censoring and fixed noise scales.",
+    "Akaike weights are relative support within these six fitted candidates, not posterior model probabilities.",
+    "Only temperature varies in the released design; stoichiometry extrapolation remains uncertain.",
+    "Finite starts do not guarantee a global optimum; bound hits and distinct minima need scrutiny.",
+    "No parameter confidence intervals or calibrated 90% prediction intervals have been estimated."
+  ]
+}

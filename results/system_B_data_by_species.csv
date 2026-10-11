@@ -1,0 +1,5 @@
+species,measurement_rows,numeric_rows,censored_rows,not_assayed,numeric_zeros
+A,52,52,0,0,0
+B,52,52,0,0,7
+P,52,52,0,0,4
+Q,25,18,7,27,0

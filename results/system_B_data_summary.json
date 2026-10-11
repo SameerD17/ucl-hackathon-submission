@@ -1,0 +1,148 @@
+{
+  "system": "B",
+  "source": "data/system_B/measurements.csv",
+  "source_sha256": "b401d7f8e18b6947234974a3a7241b2c350568eefa2a52cf3d8f6710036563ff",
+  "runs": 5,
+  "measurement_rows": 181,
+  "numeric_rows": 174,
+  "censored_rows": 7,
+  "numeric_zeros": 11,
+  "positive_time_rows": 161,
+  "positive_time_censored_rows": 2,
+  "unassayed_species_time_pairs": 27,
+  "Q_LOQ_M": 3e-05,
+  "noise_sd_formula": "sqrt((relative * predicted_concentration)^2 + absolute^2)",
+  "noise": {
+    "A": {
+      "relative": 0.03,
+      "absolute_M": 0.0035
+    },
+    "B": {
+      "relative": 0.03,
+      "absolute_M": 0.0035
+    },
+    "P": {
+      "relative": 0.03,
+      "absolute_M": 0.0035
+    },
+    "Q": {
+      "relative": 0.15,
+      "absolute_M": 2.2e-05
+    }
+  },
+  "by_run": [
+    {
+      "run_id": "B1",
+      "temperature_C": 65.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times": 10,
+      "measurement_rows": 35,
+      "numeric_rows": 33,
+      "censored_rows": 2,
+      "numeric_zeros": 1,
+      "positive_time_rows": 31,
+      "Q_assays": 5,
+      "Q_not_assayed": 5
+    },
+    {
+      "run_id": "B2",
+      "temperature_C": 70.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times": 10,
+      "measurement_rows": 35,
+      "numeric_rows": 33,
+      "censored_rows": 2,
+      "numeric_zeros": 3,
+      "positive_time_rows": 31,
+      "Q_assays": 5,
+      "Q_not_assayed": 5
+    },
+    {
+      "run_id": "B3",
+      "temperature_C": 75.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times": 10,
+      "measurement_rows": 35,
+      "numeric_rows": 34,
+      "censored_rows": 1,
+      "numeric_zeros": 3,
+      "positive_time_rows": 31,
+      "Q_assays": 5,
+      "Q_not_assayed": 5
+    },
+    {
+      "run_id": "B4",
+      "temperature_C": 80.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times": 11,
+      "measurement_rows": 38,
+      "numeric_rows": 37,
+      "censored_rows": 1,
+      "numeric_zeros": 3,
+      "positive_time_rows": 34,
+      "Q_assays": 5,
+      "Q_not_assayed": 6
+    },
+    {
+      "run_id": "B5",
+      "temperature_C": 85.0,
+      "A0_M": 1.0,
+      "B0_M": 0.25,
+      "sample_times": 11,
+      "measurement_rows": 38,
+      "numeric_rows": 37,
+      "censored_rows": 1,
+      "numeric_zeros": 1,
+      "positive_time_rows": 34,
+      "Q_assays": 5,
+      "Q_not_assayed": 6
+    }
+  ],
+  "by_species": [
+    {
+      "species": "A",
+      "measurement_rows": 52,
+      "numeric_rows": 52,
+      "censored_rows": 0,
+      "not_assayed": 0,
+      "numeric_zeros": 0
+    },
+    {
+      "species": "B",
+      "measurement_rows": 52,
+      "numeric_rows": 52,
+      "censored_rows": 0,
+      "not_assayed": 0,
+      "numeric_zeros": 7
+    },
+    {
+      "species": "P",
+      "measurement_rows": 52,
+      "numeric_rows": 52,
+      "censored_rows": 0,
+      "not_assayed": 0,
+      "numeric_zeros": 4
+    },
+    {
+      "species": "Q",
+      "measurement_rows": 25,
+      "numeric_rows": 18,
+      "censored_rows": 7,
+      "not_assayed": 27,
+      "numeric_zeros": 0
+    }
+  ],
+  "interpretation": [
+    "Censored Q values are preserved as upper-limit information, never replaced by zero.",
+    "The coverage table is diagnostic metadata, not additional observations.",
+    "Numeric zeros remain uncensored numeric observations as supplied.",
+    "Time-zero rows are retained, but do not inform rates when initial conditions are fixed.",
+    "All released runs use the same initial charge; temperature is the only varied input.",
+    "A censored likelihood and predictive uncertainty still need to be implemented and assessed.",
+    "No mechanism ranking is produced by this inspection step."
+  ]
+}

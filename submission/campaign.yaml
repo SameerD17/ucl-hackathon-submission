@@ -1,0 +1,67 @@
+rationale: 'Precommitted single-block discrimination campaign: all three runs are
+  at 75 C, with A-depleted, balanced, and concentrated A-rich charges. M2 predicts
+  dQ/dP=k3/k2; M4 predicts dQ/dP=(k3/k2)*A(t). Changing A concentration and depletion
+  therefore tests the distinguishing rate-law term while holding temperature fixed.
+  Conditions were selected from a disclosed charge grid under the 5 g material cap
+  using a marginal predictive-distance heuristic that includes assay/parameter uncertainty
+  and Q censoring. Each run samples the initial charge, early and mid-course product
+  formation, and four times selected for model separation; all four observable species
+  are assayed. A separate joint-campaign simulation audit shares one parameter vector
+  across all runs and includes a broader-uncertainty/Q-noise sensitivity check. These
+  are forecasts, not new experimental evidence. Three runs meet the minimum campaign
+  size; the unused material and sample allowance are retained rather than assigned
+  to nearly redundant conditions. No run depends on another run''s outcome. No measurement
+  of I is proposed. This campaign does not establish isolated-API compliance with
+  the 15 ppm w/w limit.'
+experiments:
+- run_id: E1
+  temperature_C: 75.0
+  A0_M: 0.5
+  B0_M: 1.5
+  sample_times_min:
+  - 0.0
+  - 20.0
+  - 60.0
+  - 360.0
+  - 480.0
+  - 720.0
+  - 960.0
+  assay:
+  - A
+  - B
+  - P
+  - Q
+- run_id: E2
+  temperature_C: 75.0
+  A0_M: 0.5
+  B0_M: 0.5
+  sample_times_min:
+  - 0.0
+  - 30.0
+  - 120.0
+  - 360.0
+  - 480.0
+  - 720.0
+  - 960.0
+  assay:
+  - A
+  - B
+  - P
+  - Q
+- run_id: E3
+  temperature_C: 75.0
+  A0_M: 1.5
+  B0_M: 0.25
+  sample_times_min:
+  - 0.0
+  - 20.0
+  - 60.0
+  - 360.0
+  - 480.0
+  - 720.0
+  - 960.0
+  assay:
+  - A
+  - B
+  - P
+  - Q

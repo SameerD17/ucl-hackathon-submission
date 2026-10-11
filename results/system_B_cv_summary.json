@@ -1,0 +1,1010 @@
+{
+  "system": "B",
+  "method": "leave-one-run-out for every candidate mechanism",
+  "source_sha256": "b401d7f8e18b6947234974a3a7241b2c350568eefa2a52cf3d8f6710036563ff",
+  "fitter_sha256": "bbfc6ca9c0d2bc910a48597b2b23da9770e38b361cd93d71e531ea8981d7f0aa",
+  "validator_sha256": "e14e105bb7fb5d69985fdd6c970882e2a85140ea66aeabfde8ff9619ec4e238b",
+  "n_experiments": 5,
+  "n_models": 6,
+  "n_fits": 30,
+  "elapsed_fitting_seconds": 298.9497142,
+  "models": [
+    {
+      "rank": 1,
+      "model": "M4",
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "plugin_NLL": -645.5139129487354,
+      "numeric_standardized_RMS": 0.9306989950874572,
+      "numeric_RMSE_M": 0.014261633974497825,
+      "numeric_mean_standardized_error": -0.00999047899466267,
+      "n_folds": 5,
+      "max_fold_numeric_standardized_RMS": 1.128257749978882,
+      "folds_with_bound_hits": 0,
+      "folds_with_distinct_minima": 0,
+      "delta_plugin_NLL": 0.0
+    },
+    {
+      "rank": 2,
+      "model": "M2",
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "plugin_NLL": -645.3244033177298,
+      "numeric_standardized_RMS": 0.9322472380674748,
+      "numeric_RMSE_M": 0.014261373670425195,
+      "numeric_mean_standardized_error": -0.007389678123912799,
+      "n_folds": 5,
+      "max_fold_numeric_standardized_RMS": 1.13353232055891,
+      "folds_with_bound_hits": 0,
+      "folds_with_distinct_minima": 0,
+      "delta_plugin_NLL": 0.18950963100564877
+    },
+    {
+      "rank": 3,
+      "model": "M1",
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "plugin_NLL": 1488.9999743767746,
+      "numeric_standardized_RMS": 5.251700911487892,
+      "numeric_RMSE_M": 0.032123425296301314,
+      "numeric_mean_standardized_error": -3.3264685216961025,
+      "n_folds": 5,
+      "max_fold_numeric_standardized_RMS": 5.34032440110187,
+      "folds_with_bound_hits": 0,
+      "folds_with_distinct_minima": 4,
+      "delta_plugin_NLL": 2134.51388732551
+    },
+    {
+      "rank": 4,
+      "model": "M5",
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "plugin_NLL": 1555.5414023634366,
+      "numeric_standardized_RMS": 5.329265237530968,
+      "numeric_RMSE_M": 0.03206465077802773,
+      "numeric_mean_standardized_error": -3.263927022183152,
+      "n_folds": 5,
+      "max_fold_numeric_standardized_RMS": 5.412778864620528,
+      "folds_with_bound_hits": 1,
+      "folds_with_distinct_minima": 0,
+      "delta_plugin_NLL": 2201.055315312172
+    },
+    {
+      "rank": 5,
+      "model": "M3",
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "plugin_NLL": 1558.832858654494,
+      "numeric_standardized_RMS": 5.332997269351846,
+      "numeric_RMSE_M": 0.03206402425114208,
+      "numeric_mean_standardized_error": -3.2628389255448815,
+      "n_folds": 5,
+      "max_fold_numeric_standardized_RMS": 5.416990330000881,
+      "folds_with_bound_hits": 1,
+      "folds_with_distinct_minima": 0,
+      "delta_plugin_NLL": 2204.346771603229
+    },
+    {
+      "rank": 6,
+      "model": "M6",
+      "n_observations": 161,
+      "n_numeric": 159,
+      "n_censored": 2,
+      "plugin_NLL": 6498.68539187364,
+      "numeric_standardized_RMS": 9.501947367520614,
+      "numeric_RMSE_M": 0.09318954522366549,
+      "numeric_mean_standardized_error": -1.7867911059694,
+      "n_folds": 5,
+      "max_fold_numeric_standardized_RMS": 11.769326125252494,
+      "folds_with_bound_hits": 5,
+      "folds_with_distinct_minima": 4,
+      "delta_plugin_NLL": 7144.199304822375
+    }
+  ],
+  "M2_vs_M4_by_experiment": [
+    {
+      "heldout_run_id": "B1",
+      "temperature_C": 65.0,
+      "M2_plugin_NLL": -121.07107407422201,
+      "M4_plugin_NLL": -121.65483431943537,
+      "M4_minus_M2_plugin_NLL": -0.5837602452133552,
+      "M2_numeric_standardized_RMS": 0.8559150374900903,
+      "M4_numeric_standardized_RMS": 0.8326024556927025
+    },
+    {
+      "heldout_run_id": "B2",
+      "temperature_C": 70.0,
+      "M2_plugin_NLL": -113.13142491332306,
+      "M4_plugin_NLL": -113.28960724928872,
+      "M4_minus_M2_plugin_NLL": -0.15818233596566245,
+      "M2_numeric_standardized_RMS": 1.13353232055891,
+      "M4_numeric_standardized_RMS": 1.128257749978882
+    },
+    {
+      "heldout_run_id": "B3",
+      "temperature_C": 75.0,
+      "M2_plugin_NLL": -130.7226861535907,
+      "M4_plugin_NLL": -130.58210678657758,
+      "M4_minus_M2_plugin_NLL": 0.14057936701311746,
+      "M2_numeric_standardized_RMS": 0.8666218662873371,
+      "M4_numeric_standardized_RMS": 0.87168977846568
+    },
+    {
+      "heldout_run_id": "B4",
+      "temperature_C": 80.0,
+      "M2_plugin_NLL": -137.99591400929128,
+      "M4_plugin_NLL": -137.70884538633737,
+      "M4_minus_M2_plugin_NLL": 0.28706862295391034,
+      "M2_numeric_standardized_RMS": 0.9644916824957754,
+      "M4_numeric_standardized_RMS": 0.973064783555164
+    },
+    {
+      "heldout_run_id": "B5",
+      "temperature_C": 85.0,
+      "M2_plugin_NLL": -142.40330416730274,
+      "M4_plugin_NLL": -142.27851920709648,
+      "M4_minus_M2_plugin_NLL": 0.12478496020625585,
+      "M2_numeric_standardized_RMS": 0.8179885431844995,
+      "M4_numeric_standardized_RMS": 0.8223338175954402
+    }
+  ],
+  "total_M4_minus_M2_plugin_NLL": -0.18950963100573404,
+  "fold_fits": {
+    "M1": {
+      "B1": {
+        "parameters": {
+          "k1": 0.017248690650604682,
+          "Ea1": 66.30150721258559,
+          "k2": 1.685979616472434e-05,
+          "Ea2": 61.12293356606179
+        },
+        "negative_log_likelihood": 1200.8241312896912,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 5.537622200790793e-07,
+        "parameters_at_bounds": [],
+        "optimality": 0.29296998177790473,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B2": {
+        "parameters": {
+          "k1": 0.01711150404441095,
+          "Ea1": 67.40285903569487,
+          "k2": 1.6040800733334252e-05,
+          "Ea2": 69.42458385888534
+        },
+        "negative_log_likelihood": 1200.7690300626023,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 86.02061435959058,
+        "parameters_at_bounds": [],
+        "optimality": 0.02203059452669952,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B3": {
+        "parameters": {
+          "k1": 0.017259468204474004,
+          "Ea1": 66.86061838669505,
+          "k2": 1.6168672332846364e-05,
+          "Ea2": 67.43479259122171
+        },
+        "negative_log_likelihood": 1226.6998557746556,
+        "n_observations": 130,
+        "n_numeric": 128,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 91.51991903825751,
+        "parameters_at_bounds": [],
+        "optimality": 0.01988381806576501,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B4": {
+        "parameters": {
+          "k1": 0.017257515993579275,
+          "Ea1": 67.17353198122237,
+          "k2": 1.655846059384709e-05,
+          "Ea2": 68.3577379115222
+        },
+        "negative_log_likelihood": 1165.5390757971363,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 71.71651673458314,
+        "parameters_at_bounds": [],
+        "optimality": 0.01942859103550249,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B5": {
+        "parameters": {
+          "k1": 0.01712575521118737,
+          "Ea1": 65.96215312436976,
+          "k2": 1.6423723459448343e-05,
+          "Ea2": 68.12330899627166
+        },
+        "negative_log_likelihood": 1154.401285476636,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 77.3040229416763,
+        "parameters_at_bounds": [],
+        "optimality": 0.010915085168173126,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      }
+    },
+    "M2": {
+      "B1": {
+        "parameters": {
+          "k1": 0.030179365839811675,
+          "Ea1": 67.04965068489123,
+          "k2": 0.020597744452799046,
+          "Ea2": 53.46914522992351,
+          "k3": 2.188969562695373e-05,
+          "Ea3": 45.69591071628306
+        },
+        "negative_log_likelihood": -527.3691523489788,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 2.4343876248167362e-08,
+        "parameters_at_bounds": [],
+        "optimality": 0.026687858412832832,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B2": {
+        "parameters": {
+          "k1": 0.03026762134752825,
+          "Ea1": 66.34131336234488,
+          "k2": 0.019803348335452556,
+          "Ea2": 59.603667442927666,
+          "k3": 1.990906202666048e-05,
+          "Ea3": 61.14381862182535
+        },
+        "negative_log_likelihood": -536.3814273335986,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 1.1719635040208232e-08,
+        "parameters_at_bounds": [],
+        "optimality": 0.004797715717805741,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B3": {
+        "parameters": {
+          "k1": 0.030495822449430002,
+          "Ea1": 66.18113133848566,
+          "k2": 0.02009738591366506,
+          "Ea2": 57.82963509366209,
+          "k3": 2.025646103063744e-05,
+          "Ea3": 57.21011934544998
+        },
+        "negative_log_likelihood": -519.3426076598398,
+        "n_observations": 130,
+        "n_numeric": 128,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 2.605099780339515e-08,
+        "parameters_at_bounds": [],
+        "optimality": 0.007561918431197748,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B4": {
+        "parameters": {
+          "k1": 0.030330566618673734,
+          "Ea1": 66.26749167241469,
+          "k2": 0.020210809292460788,
+          "Ea2": 58.14004866702845,
+          "k3": 2.10751212493395e-05,
+          "Ea3": 58.434402862353416
+        },
+        "negative_log_likelihood": -512.1578391253323,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 3.991885932919104e-09,
+        "parameters_at_bounds": [],
+        "optimality": 0.0013397999556404917,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B5": {
+        "parameters": {
+          "k1": 0.030129565841948484,
+          "Ea1": 64.9931635178691,
+          "k2": 0.020225482173504682,
+          "Ea2": 58.691273748076654,
+          "k3": 2.0856399280627358e-05,
+          "Ea3": 58.48194268722027
+        },
+        "negative_log_likelihood": -507.49562278842257,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 2.610875071695773e-09,
+        "parameters_at_bounds": [],
+        "optimality": 0.0023948434008025997,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      }
+    },
+    "M3": {
+      "B1": {
+        "parameters": {
+          "k1": 0.01737655892970976,
+          "Ea1": 66.23768967197411,
+          "k2": 4.922069379274057e-06,
+          "Ea2": 1.9056507678215704e-15
+        },
+        "negative_log_likelihood": 1245.959531863902,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 1.2013557579848566e-05,
+        "parameters_at_bounds": [
+          "Ea2"
+        ],
+        "optimality": 0.11759521129082605,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B2": {
+        "parameters": {
+          "k1": 0.017220623504625943,
+          "Ea1": 67.63850454950402,
+          "k2": 4.07443524068531e-06,
+          "Ea2": 17.576463486477607
+        },
+        "negative_log_likelihood": 1247.801439031022,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 2.773226697172504e-07,
+        "parameters_at_bounds": [],
+        "optimality": 0.005522799798367611,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B3": {
+        "parameters": {
+          "k1": 0.017358506794161045,
+          "Ea1": 67.12124830973255,
+          "k2": 4.5942982596752444e-06,
+          "Ea2": 1.7713943567431696
+        },
+        "negative_log_likelihood": 1283.419496053801,
+        "n_observations": 130,
+        "n_numeric": 128,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 3.1923491405905224e-08,
+        "parameters_at_bounds": [],
+        "optimality": 0.007497216749839116,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B4": {
+        "parameters": {
+          "k1": 0.01736865532547376,
+          "Ea1": 67.45854186086991,
+          "k2": 4.839438923315729e-06,
+          "Ea2": 6.562757968544173
+        },
+        "negative_log_likelihood": 1225.4347819836912,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 5.919632712902967e-07,
+        "parameters_at_bounds": [],
+        "optimality": 0.026833917406886898,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B5": {
+        "parameters": {
+          "k1": 0.017239983770002368,
+          "Ea1": 66.3060810808681,
+          "k2": 4.646600213030669e-06,
+          "Ea2": 1.8306505541892708
+        },
+        "negative_log_likelihood": 1205.4688204203014,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 1.6560693438805174e-07,
+        "parameters_at_bounds": [],
+        "optimality": 0.001285089251176673,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      }
+    },
+    "M4": {
+      "B1": {
+        "parameters": {
+          "k1": 0.03018045476571163,
+          "Ea1": 67.0590780556053,
+          "k2": 0.020583536567790744,
+          "Ea2": 53.518055930799655,
+          "k3": 2.6897045034713345e-05,
+          "Ea3": 46.60412533033031
+        },
+        "negative_log_likelihood": -526.8916023281173,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 6.965137799852528e-09,
+        "parameters_at_bounds": [],
+        "optimality": 0.001358655460220505,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "L mol^-1 min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B2": {
+        "parameters": {
+          "k1": 0.03026953059548858,
+          "Ea1": 66.3464280775519,
+          "k2": 0.019796270092178887,
+          "Ea2": 59.60208365436037,
+          "k3": 2.4587196288922894e-05,
+          "Ea3": 61.26202531087739
+        },
+        "negative_log_likelihood": -536.2926443959747,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 5.101128408568911e-09,
+        "parameters_at_bounds": [],
+        "optimality": 0.001363634909179761,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "L mol^-1 min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B3": {
+        "parameters": {
+          "k1": 0.030497286878911817,
+          "Ea1": 66.18789930177455,
+          "k2": 0.02008938855917645,
+          "Ea2": 57.84028010983856,
+          "k3": 2.4992559366086372e-05,
+          "Ea3": 57.52732027445414
+        },
+        "negative_log_likelihood": -519.5338378610663,
+        "n_observations": 130,
+        "n_numeric": 128,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 1.1886413631145842e-08,
+        "parameters_at_bounds": [],
+        "optimality": 0.0012024905060657614,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "L mol^-1 min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B4": {
+        "parameters": {
+          "k1": 0.030331527133358124,
+          "Ea1": 66.27231816965714,
+          "k2": 0.020199610664857932,
+          "Ea2": 58.147166358247034,
+          "k3": 2.5958224318170533e-05,
+          "Ea3": 58.733093112149724
+        },
+        "negative_log_likelihood": -512.4986205452544,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 1.0170310815738048e-08,
+        "parameters_at_bounds": [],
+        "optimality": 0.0048443434440638596,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "L mol^-1 min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B5": {
+        "parameters": {
+          "k1": 0.030131374403841518,
+          "Ea1": 65.00230004382381,
+          "k2": 0.020215512979521885,
+          "Ea2": 58.70109471290619,
+          "k3": 2.5695320068375026e-05,
+          "Ea3": 58.73135592390529
+        },
+        "negative_log_likelihood": -507.6701641335236,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 8.837560017127544e-09,
+        "parameters_at_bounds": [],
+        "optimality": 0.004190850494025624,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "L mol^-1 min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      }
+    },
+    "M5": {
+      "B1": {
+        "parameters": {
+          "k1": 0.017367272806050476,
+          "Ea1": 66.30263778292205,
+          "k2": 6.216269490044466e-06,
+          "Ea2": 1.4259584564910367e-06
+        },
+        "negative_log_likelihood": 1242.8521975837766,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 2.9298208573891316e-05,
+        "parameters_at_bounds": [
+          "Ea2"
+        ],
+        "optimality": 0.1288691509657835,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B2": {
+        "parameters": {
+          "k1": 0.017215244072914675,
+          "Ea1": 67.63321252879146,
+          "k2": 5.11865074485131e-06,
+          "Ea2": 21.228558990971845
+        },
+        "negative_log_likelihood": 1244.7418391229344,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 1.040986262523802e-06,
+        "parameters_at_bounds": [],
+        "optimality": 0.0839374936212474,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B3": {
+        "parameters": {
+          "k1": 0.01735415553919978,
+          "Ea1": 67.10940609719827,
+          "k2": 5.771274318441629e-06,
+          "Ea2": 5.4300550846048194
+        },
+        "negative_log_likelihood": 1280.4517185778989,
+        "n_observations": 130,
+        "n_numeric": 128,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 3.1464992389373947e-07,
+        "parameters_at_bounds": [],
+        "optimality": 0.008430021363759069,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B4": {
+        "parameters": {
+          "k1": 0.0173636893248319,
+          "Ea1": 67.44275915311259,
+          "k2": 6.076151982940924e-06,
+          "Ea2": 10.241847415297462
+        },
+        "negative_log_likelihood": 1222.2766915297545,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 3.971033493144205e-07,
+        "parameters_at_bounds": [],
+        "optimality": 0.029151371888743154,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      },
+      "B5": {
+        "parameters": {
+          "k1": 0.017234640898614564,
+          "Ea1": 66.28560277858352,
+          "k2": 5.8314820964040655e-06,
+          "Ea2": 5.3723915319190665
+        },
+        "negative_log_likelihood": 1202.5314158004785,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 4.250997790222755e-06,
+        "parameters_at_bounds": [],
+        "optimality": 0.7572265969355535,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "L mol^-1 min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol"
+        }
+      }
+    },
+    "M6": {
+      "B1": {
+        "parameters": {
+          "k1": 0.0011961447131879062,
+          "Ea1": 31.547449361709717,
+          "k2": 9.999995841450923,
+          "Ea2": 173.05815084902966,
+          "k3": 0.0005344700183520461,
+          "Ea3": 0.0004376700400223177
+        },
+        "negative_log_likelihood": 5695.7271140420935,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 188.53103207338972,
+        "parameters_at_bounds": [
+          "k2",
+          "Ea3"
+        ],
+        "optimality": 22.94897014016684,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B2": {
+        "parameters": {
+          "k1": 0.0011810509730408151,
+          "Ea1": 34.061156743369544,
+          "k2": 9.99999999999745,
+          "Ea2": 91.91452646921302,
+          "k3": 0.0004897200124119487,
+          "Ea3": 1.7266246918449476e-05
+        },
+        "negative_log_likelihood": 5476.4079055686825,
+        "n_observations": 130,
+        "n_numeric": 129,
+        "n_censored": 1,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 121.12257217402475,
+        "parameters_at_bounds": [
+          "k2",
+          "Ea3"
+        ],
+        "optimality": 34.71249713959068,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B3": {
+        "parameters": {
+          "k1": 0.0011714699167843308,
+          "Ea1": 34.01497767418026,
+          "k2": 9.999951706995283,
+          "Ea2": 107.75654620359335,
+          "k3": 0.0004673931849510631,
+          "Ea3": 0.005997036047244366
+        },
+        "negative_log_likelihood": 5381.578099142518,
+        "n_observations": 130,
+        "n_numeric": 128,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 160.06561505999343,
+        "parameters_at_bounds": [
+          "k2",
+          "Ea3"
+        ],
+        "optimality": 61.96626656625663,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B4": {
+        "parameters": {
+          "k1": 0.0011760597587107085,
+          "Ea1": 33.96289465112321,
+          "k2": 9.999999946967188,
+          "Ea2": 46.28741000527011,
+          "k3": 0.0008469438880887573,
+          "Ea3": 0.00018593164045276295
+        },
+        "negative_log_likelihood": 4826.40312794168,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 154.3675942905311,
+        "parameters_at_bounds": [
+          "k2",
+          "Ea3"
+        ],
+        "optimality": 3.9748205135790133,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      },
+      "B5": {
+        "parameters": {
+          "k1": 0.0011968900669547407,
+          "Ea1": 37.14924341495683,
+          "k2": 9.999999999520622,
+          "Ea2": 24.687768873171766,
+          "k3": 0.0008846581023429251,
+          "Ea3": 9.409509078023959e-07
+        },
+        "negative_log_likelihood": 4220.599070778209,
+        "n_observations": 127,
+        "n_numeric": 125,
+        "n_censored": 2,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "attempted_starts": 4,
+        "successful_start_nll_span": 0.00010843111340363976,
+        "parameters_at_bounds": [
+          "k2",
+          "Ea3"
+        ],
+        "optimality": 352495.28590173717,
+        "failed_simulation_evaluations": 0,
+        "parameter_units": {
+          "k1": "min^-1 at 75 C",
+          "Ea1": "kJ/mol",
+          "k2": "L mol^-1 min^-1 at 75 C",
+          "Ea2": "kJ/mol",
+          "k3": "min^-1 at 75 C",
+          "Ea3": "kJ/mol"
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Scores use point-estimated parameters and measurement noise only, not full predictive uncertainty.",
+    "No prediction intervals or 90% coverage estimates are calculated.",
+    "Only five experiments are available and every fold shares training runs with other folds.",
+    "The released design varies only temperature; performance at different initial charges is untested.",
+    "Held-out log scores are compared directly; no AIC penalty or probability interpretation is added.",
+    "Gaussian assay errors and the numeric treatment of reported zeros remain assumptions.",
+    "Finite-start optimization, fixed search bounds, and possible local minima remain limitations.",
+    "This evaluates candidates already specified in the brief; it is not an untouched final test set."
+  ]
+}

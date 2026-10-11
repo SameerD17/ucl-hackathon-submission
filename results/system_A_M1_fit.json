@@ -1,0 +1,28 @@
+{
+  "system": "A",
+  "model": "M1 (disclosed)",
+  "parameters": {
+    "k1": 0.02992435214746144,
+    "Ea1": 59.793293399111015,
+    "k2": 0.003952523881455578,
+    "Ea2": 70.07758772430219
+  },
+  "units": {
+    "k1": "L mol^-1 min^-1 at 75 C",
+    "k2": "L mol^-1 min^-1 at 75 C",
+    "Ea1": "kJ/mol",
+    "Ea2": "kJ/mol"
+  },
+  "noise_assumption": "Independent Gaussian errors, SD=0.02*c for A/B/P and 0.05*c for Q",
+  "fitted_observations": 244,
+  "free_parameters": 4,
+  "negative_log_likelihood": -865.88454181449,
+  "standardized_residual_rms": 1.2342057973914609,
+  "parameter_at_search_bound": false,
+  "limitations": [
+    "M1 is given; this is not a comparison of the six mechanisms.",
+    "Plots and residuals describe the training data, not held-out validation.",
+    "No parameter or prediction intervals are estimated in this first exercise.",
+    "Time-zero observations carry no kinetic information and are excluded from fitting."
+  ]
+}

@@ -1,11 +1,69 @@
-# Ranked hypothesis set -- REPLACE the baseline values with your own.
-# Rank all six candidates with a posterior probability / weight (summing ~1) and a short
-# justification. If two are genuinely inseparable on the released data, say so and weight
-# them accordingly -- honest ranking scores better than confident guessing.
+# System B: evidence from the released measurements and leave-one-run-out fits.
+# Weights sum to 1 and match the M2/M4 mixture used for predictions and design.
+# These are practical predictive weights, NOT posterior model probabilities.
+# Zero means excluded from this predictive mixture, not mathematically impossible.
+# Rank order follows held-out plug-in NLL; M4 and M2 are effectively tied.
+# All models use the same 161 positive-time observations, including two censored Q
+# results. Standardized RMS refers to numeric errors / assumed assay SD only.
+# Proposed-campaign simulations provide no new evidence for this ranking.
 ranking:
-  - {model: M1, weight: 0.17, justification: "placeholder -- replace"}
-  - {model: M2, weight: 0.17, justification: "placeholder -- replace"}
-  - {model: M3, weight: 0.17, justification: "placeholder -- replace"}
-  - {model: M4, weight: 0.17, justification: "placeholder -- replace"}
-  - {model: M5, weight: 0.16, justification: "placeholder -- replace"}
-  - {model: M6, weight: 0.16, justification: "placeholder -- replace"}
+  - model: M4
+    weight: 0.5
+    justification: >-
+      A+B forms an unobserved intermediate I; I forms P, while I+A forms Q.
+      Best held-out plug-in NLL is -645.51, with numeric standardized RMS 0.931.
+      Its advantage over M2 is only 0.19 NLL and the preferred model changes
+      across excluded experiments. All released runs start at A0=1.0 M and
+      B0=0.25 M; the excess of A limits discrimination of the A-dependent
+      impurity branch. Assign an equal practical predictive weight to M2,
+      not a posterior probability or a claim that M4 is uniquely identified.
+
+  - model: M2
+    weight: 0.5
+    justification: >-
+      A+B forms I, which branches through first-order routes to P and Q.
+      Held-out plug-in NLL is -645.32 and numeric standardized RMS is 0.932,
+      essentially matching M4. The training AICc difference is only 0.096;
+      both leading mechanisms have stable interior solutions across folds.
+      Retain equal weight because the released data do not resolve whether
+      the impurity branch also depends on A. Prediction at new starting
+      charges remains unvalidated.
+
+  - model: M1
+    weight: 0.0
+    justification: >-
+      The direct parallel A+B routes to P and Q predict the excluded runs
+      poorly: held-out plug-in NLL is 1489.00 and numeric standardized RMS
+      is 5.252. Training AICc is about 4271 above M4. Different starting
+      fits reach distinct minima in four validation folds; even the best
+      solutions found perform much worse than M2/M4. Exclude from the
+      current predictive mixture.
+
+  - model: M5
+    weight: 0.0
+    justification: >-
+      The A+P impurity pathway has held-out plug-in NLL 1555.54 and numeric
+      standardized RMS 5.329. It slightly outperforms M3 but remains far
+      behind M2/M4; training AICc is about 4394 above M4. One validation
+      fold reaches a parameter bound. Exclude from the current predictive
+      mixture because of its poor observed predictive performance.
+
+  - model: M3
+    weight: 0.0
+    justification: >-
+      The product-degradation pathway P to Q has held-out plug-in NLL
+      1558.83 and numeric standardized RMS 5.333. Training AICc is about
+      4402 above M4, and one validation fold reaches a parameter bound.
+      Its predictions are much poorer than M2/M4 and marginally poorer
+      than M5. Exclude from the current predictive mixture.
+
+  - model: M6
+    weight: 0.0
+    justification: >-
+      A activation followed by I+B coupling gives the poorest solutions
+      found: held-out plug-in NLL is approximately 6500 and numeric
+      standardized RMS is 9.50. All five validation folds hit parameter
+      bounds, and four show distinct minima across starting fits.
+      These optimization limitations prevent an absolute rejection proof,
+      but the available fits give no basis to retain it in the predictive
+      mixture.
