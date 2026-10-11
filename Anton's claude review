@@ -1,13 +1,3 @@
-A second copy of the submission came through, so I'll check whether it differs from the first, then finish the review on whichever is newer.
-
-Identical to the first upload, so I'll carry on with the review. Next: the replicate script, then the clean-machine run.
-
-The replicate path verifies saved fits against the data via hashes and likelihood checks rather than re-optimising. Now the gate: a fresh copy, fresh virtualenv, and the four `just` commands timed.
-
-A useful result already, but my 7-run design overshot the 5 g cap (6.56 g). Let me fix it to a legal full-budget version and rerun.
-
-Intervals behave as they should: where M2 and M4 diverge (H08–H12), the 90 % band spans both models' means. Let me glance at three of the key figures, since presentation counts for 10 marks.
-
 Your team's submission is strong. It passes the reproducibility gate, ranks the candidates correctly, and its intervals are well built. Three changes would win the most marks:
 1. Add the mechanistic argument for the rankings.
 2. Spread the campaign runs across temperature.
