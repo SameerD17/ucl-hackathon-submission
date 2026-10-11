@@ -22,7 +22,9 @@
     "vessel_mL": 5.0,
     "all_constraints_passed": true
   },
-  "required_figures": 16,
+  "required_figures": 18,
+  "system_A_reference_selected_folds": 4,
+  "system_A_full_data_AICc_leader": "M1",
   "pinned_dependencies": {
     "numpy": "2.2.6",
     "scipy": "1.15.3",
@@ -30,31 +32,31 @@
     "matplotlib": "3.10.9",
     "pyyaml": "6.0.3"
   },
-  "saved_fitting_files": 9,
+  "saved_fitting_files": 10,
   "all_file_checks_passed": true,
   "workflow_commands": [
     {
       "command": "just install",
-      "seconds": 7.000717499999155,
+      "seconds": 7.54438740000478,
       "exit_code": 0
     },
     {
       "command": "just predict",
-      "seconds": 26.133264300002338,
+      "seconds": 13.10935129999416,
       "exit_code": 0
     },
     {
       "command": "just suggest",
-      "seconds": 106.89447089999885,
+      "seconds": 59.19300369999837,
       "exit_code": 0
     },
     {
       "command": "just replicate",
-      "seconds": 71.13845399999991,
+      "seconds": 86.64111140000023,
       "exit_code": 0
     }
   ],
-  "total_workflow_seconds": 211.16754990000118,
+  "total_workflow_seconds": 166.4886078999989,
   "within_ten_minutes": true,
   "python_version": "3.13.7",
   "scope": "working-copy file and workflow checks; not a scientific-validation guarantee or a completed presentation"

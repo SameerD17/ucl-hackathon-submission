@@ -1,0 +1,3410 @@
+{
+  "system": "A",
+  "source_sha256": {
+    "data/system_A/measurements.csv": "2be06b382c0638d097668ddf908895f4f34daf50f4ecd84a69089c629e3fc5db",
+    "fit_system_a.py": "b2e21a91fe0c7e17612d4bb2a4700cd3e981cb3d868561c8efcdb1729e547fac",
+    "validate_system_a_selection.py": "50fd1d745ac4787321c4a165a6501922b51ad682bfcdebf1933e62c3a46104c7",
+    "src/candidates/__init__.py": "42e82fa7d24aaeb1315c9e8c5724fc5f7e3914f62153000fee45622160e16738",
+    "src/candidates/models.py": "ea6f29fe3f6e689259f949e3681e1e7acf5eea1bda9708b8b1390b1810fb399a",
+    "src/candidates/simulate.py": "19ac1f42c54330af1b62c89d1ce48bb907af8ff81f82c3aa07f5beccc472db74"
+  },
+  "noise_assumption": "Independent Gaussian assay errors, SD=0.02*mean for A/B/P and 0.05*mean for Q",
+  "rate_bounds": [
+    1e-09,
+    1000.0
+  ],
+  "activation_energy_bounds_kJ_mol": [
+    0.0,
+    180.0
+  ],
+  "full_fits": {
+    "M1": {
+      "parameters": {
+        "k1": 0.029924392913434194,
+        "Ea1": 59.79335016516799,
+        "k2": 0.0039525258390896755,
+        "Ea2": 70.07765292078504
+      },
+      "negative_log_likelihood": -865.884541668406,
+      "training_run_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "n_observations": 244,
+      "n_parameters": 4,
+      "successful_starts": 4,
+      "parameters_at_bounds": [],
+      "successful_start_nll_span": 4.029266165161971e-08,
+      "optimality": 0.0051982407469831566,
+      "failed_simulation_evaluations": 0,
+      "starts": [
+        {
+          "start": 1,
+          "success": true,
+          "negative_log_likelihood": -865.8845416281133,
+          "nfev": 7,
+          "continued": false,
+          "optimality": 0.0009259902987409526,
+          "message": "`ftol` termination condition is satisfied.",
+          "elapsed_seconds": 0.41868872299983195,
+          "parameters": {
+            "k1": 0.02992439292054692,
+            "Ea1": 59.79335019037685,
+            "k2": 0.003952525887448099,
+            "Ea2": 70.07765202546113
+          }
+        },
+        {
+          "start": 2,
+          "success": true,
+          "negative_log_likelihood": -865.8845416340971,
+          "nfev": 11,
+          "continued": false,
+          "optimality": 0.08962006167559457,
+          "message": "`ftol` termination condition is satisfied.",
+          "elapsed_seconds": 0.534162773999924,
+          "parameters": {
+            "k1": 0.029924392379270567,
+            "Ea1": 59.793331842583186,
+            "k2": 0.003952526002015088,
+            "Ea2": 70.07766138393305
+          }
+        },
+        {
+          "start": 3,
+          "success": true,
+          "negative_log_likelihood": -865.8845416385084,
+          "nfev": 10,
+          "continued": false,
+          "optimality": 0.0019502793312691784,
+          "message": "`ftol` termination condition is satisfied.",
+          "elapsed_seconds": 0.6189268680000168,
+          "parameters": {
+            "k1": 0.02992439301585506,
+            "Ea1": 59.79335114831095,
+            "k2": 0.003952525827358952,
+            "Ea2": 70.0776475910744
+          }
+        },
+        {
+          "start": 4,
+          "success": true,
+          "negative_log_likelihood": -865.884541668406,
+          "nfev": 13,
+          "continued": false,
+          "optimality": 0.0051982407469831566,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 0.6223147600003358,
+          "parameters": {
+            "k1": 0.029924392913434194,
+            "Ea1": 59.79335016516799,
+            "k2": 0.0039525258390896755,
+            "Ea2": 70.07765292078504
+          }
+        }
+      ]
+    },
+    "M2": {
+      "parameters": {
+        "k1": 0.033897191003173135,
+        "Ea1": 60.826759726846824,
+        "k2": 135.42671724729325,
+        "Ea2": 169.7621767005232,
+        "k3": 17.887614801191848,
+        "Ea3": 179.99862934968314
+      },
+      "negative_log_likelihood": -866.191690225994,
+      "training_run_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "n_observations": 244,
+      "n_parameters": 6,
+      "successful_starts": 4,
+      "parameters_at_bounds": [
+        "Ea3"
+      ],
+      "successful_start_nll_span": 0.0002232077794133147,
+      "optimality": 0.3369814974939595,
+      "failed_simulation_evaluations": 0,
+      "starts": [
+        {
+          "start": 1,
+          "success": true,
+          "negative_log_likelihood": -866.191690225994,
+          "nfev": 32,
+          "continued": false,
+          "optimality": 0.3369814974939595,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 11.075349181999627,
+          "parameters": {
+            "k1": 0.033897191003173135,
+            "Ea1": 60.826759726846824,
+            "k2": 135.42671724729325,
+            "Ea2": 169.7621767005232,
+            "k3": 17.887614801191848,
+            "Ea3": 179.99862934968314
+          }
+        },
+        {
+          "start": 2,
+          "success": true,
+          "negative_log_likelihood": -866.1914670182146,
+          "nfev": 46,
+          "continued": false,
+          "optimality": 0.19905211197819886,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 16.974940375999722,
+          "parameters": {
+            "k1": 0.03389740599278634,
+            "Ea1": 60.82482822584847,
+            "k2": 133.35049016750372,
+            "Ea2": 169.7633876795894,
+            "k3": 17.613398836488194,
+            "Ea3": 179.9994982672121
+          }
+        },
+        {
+          "start": 3,
+          "success": true,
+          "negative_log_likelihood": -866.1915767352186,
+          "nfev": 36,
+          "continued": false,
+          "optimality": 0.1884528115839871,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 10.00495452099949,
+          "parameters": {
+            "k1": 0.0338973188766998,
+            "Ea1": 60.82561626446896,
+            "k2": 134.18295280235526,
+            "Ea2": 169.76337602791114,
+            "k3": 17.72336131288368,
+            "Ea3": 179.99997255373668
+          }
+        },
+        {
+          "start": 4,
+          "success": true,
+          "negative_log_likelihood": -866.1915989589054,
+          "nfev": 30,
+          "continued": false,
+          "optimality": 0.6277471837349888,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 10.938377927000147,
+          "parameters": {
+            "k1": 0.033897046146433185,
+            "Ea1": 60.82819372965843,
+            "k2": 136.9146372547122,
+            "Ea2": 169.7517880199029,
+            "k3": 18.08410355588124,
+            "Ea3": 179.98784073797734
+          }
+        }
+      ]
+    },
+    "M3": {
+      "parameters": {
+        "k1": 0.054506220929914063,
+        "Ea1": 62.49063930696573,
+        "k2": 0.004091843251235655,
+        "Ea2": 34.1592433228698
+      },
+      "negative_log_likelihood": 185124.60927312408,
+      "training_run_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "n_observations": 244,
+      "n_parameters": 4,
+      "successful_starts": 4,
+      "parameters_at_bounds": [],
+      "successful_start_nll_span": 0.0290001634566579,
+      "optimality": 49.6072851231582,
+      "failed_simulation_evaluations": 0,
+      "starts": [
+        {
+          "start": 1,
+          "success": true,
+          "negative_log_likelihood": 185124.61502047337,
+          "nfev": 25,
+          "continued": false,
+          "optimality": 1519.8966812241542,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 1.265775210999891,
+          "parameters": {
+            "k1": 0.054507276808023856,
+            "Ea1": 62.46512625783562,
+            "k2": 0.0040915866084074975,
+            "Ea2": 34.18421605591109
+          }
+        },
+        {
+          "start": 2,
+          "success": true,
+          "negative_log_likelihood": 185124.60927312408,
+          "nfev": 35,
+          "continued": false,
+          "optimality": 49.6072851231582,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 1.7202923900003952,
+          "parameters": {
+            "k1": 0.054506220929914063,
+            "Ea1": 62.49063930696573,
+            "k2": 0.004091843251235655,
+            "Ea2": 34.1592433228698
+          }
+        },
+        {
+          "start": 3,
+          "success": true,
+          "negative_log_likelihood": 185124.63827328754,
+          "nfev": 23,
+          "continued": false,
+          "optimality": 1165.1544238619106,
+          "message": "`ftol` termination condition is satisfied.",
+          "elapsed_seconds": 1.3296817949994875,
+          "parameters": {
+            "k1": 0.05450234984204399,
+            "Ea1": 62.488225716879775,
+            "k2": 0.0040919830929770345,
+            "Ea2": 34.19322375501751
+          }
+        },
+        {
+          "start": 4,
+          "success": true,
+          "negative_log_likelihood": 185124.62424698521,
+          "nfev": 31,
+          "continued": false,
+          "optimality": 732.5612291493157,
+          "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+          "elapsed_seconds": 1.595993973000077,
+          "parameters": {
+            "k1": 0.054502547987433744,
+            "Ea1": 62.462817901555404,
+            "k2": 0.004091955401211956,
+            "Ea2": 34.19139087801628
+          }
+        }
+      ]
+    },
+    "M4": {
+      "parameters": {
+        "k1": 0.028274218029954855,
+        "Ea1": 51.71321350481659,
+        "k2": 628.7302169407616,
+        "Ea2": 61.59365105115169,
+        "k3": 103.38845506106698,
+        "Ea3": 33.5133576074042
+      },
+      "negative_log_likelihood": 10126.651100711788,
+      "training_run_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "n_observations": 244,
+      "n_parameters": 6,
+      "successful_starts": 4,
+      "parameters_at_bounds": [],
+      "successful_start_nll_span": 7.496892998529802,
+      "optimality": 219.46268964321797,
+      "failed_simulation_evaluations": 0,
+      "starts": [
+        {
+          "start": 1,
+          "success": true,
+          "negative_log_likelihood": 10126.651100711788,
+          "nfev": 27,
+          "continued": false,
+          "optimality": 219.46268964321797,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 5.222164697999688,
+          "parameters": {
+            "k1": 0.028274218029954855,
+            "Ea1": 51.71321350481659,
+            "k2": 628.7302169407616,
+            "Ea2": 61.59365105115169,
+            "k3": 103.38845506106698,
+            "Ea3": 33.5133576074042
+          }
+        },
+        {
+          "start": 2,
+          "success": true,
+          "negative_log_likelihood": 10134.147993710318,
+          "nfev": 29,
+          "continued": false,
+          "optimality": 77.04766324498587,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 5.437292460000208,
+          "parameters": {
+            "k1": 0.0282783490267636,
+            "Ea1": 51.70892581045416,
+            "k2": 150.88285590076154,
+            "Ea2": 53.198644171659204,
+            "k3": 24.811116101909253,
+            "Ea3": 25.14302135822929
+          }
+        },
+        {
+          "start": 3,
+          "success": true,
+          "negative_log_likelihood": 10126.950197731127,
+          "nfev": 44,
+          "continued": false,
+          "optimality": 254.4664855759008,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 7.052261785000155,
+          "parameters": {
+            "k1": 0.02827350953660644,
+            "Ea1": 51.714115769544776,
+            "k2": 571.867843845262,
+            "Ea2": 69.28233224547742,
+            "k3": 94.04827445736946,
+            "Ea3": 41.212852600117316
+          }
+        },
+        {
+          "start": 4,
+          "success": true,
+          "negative_log_likelihood": 10134.132456197274,
+          "nfev": 30,
+          "continued": false,
+          "optimality": 81.56790923884455,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 8.105714672999966,
+          "parameters": {
+            "k1": 0.02827940272140123,
+            "Ea1": 51.71318740821954,
+            "k2": 150.44507465934632,
+            "Ea2": 51.15115954286429,
+            "k3": 24.73682565617165,
+            "Ea3": 23.096881564036316
+          }
+        }
+      ]
+    },
+    "M5": {
+      "parameters": {
+        "k1": 0.012669016785799759,
+        "Ea1": 31.95289450972034,
+        "k2": 0.012567125929583143,
+        "Ea2": 22.320864176158807
+      },
+      "negative_log_likelihood": 370241.7083706995,
+      "training_run_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "n_observations": 244,
+      "n_parameters": 4,
+      "successful_starts": 4,
+      "parameters_at_bounds": [],
+      "successful_start_nll_span": 0.0779907928663306,
+      "optimality": 232.6296018055715,
+      "failed_simulation_evaluations": 0,
+      "starts": [
+        {
+          "start": 1,
+          "success": true,
+          "negative_log_likelihood": 370241.7375593911,
+          "nfev": 39,
+          "continued": false,
+          "optimality": 3613.591135994963,
+          "message": "`ftol` termination condition is satisfied.",
+          "elapsed_seconds": 1.779116583999894,
+          "parameters": {
+            "k1": 0.012668298151809847,
+            "Ea1": 31.923584084437735,
+            "k2": 0.012566776066280176,
+            "Ea2": 22.382337188224653
+          }
+        },
+        {
+          "start": 2,
+          "success": true,
+          "negative_log_likelihood": 370241.7083706995,
+          "nfev": 38,
+          "continued": false,
+          "optimality": 232.6296018055715,
+          "message": "`ftol` termination condition is satisfied.",
+          "elapsed_seconds": 1.7640109410003788,
+          "parameters": {
+            "k1": 0.012669016785799759,
+            "Ea1": 31.95289450972034,
+            "k2": 0.012567125929583143,
+            "Ea2": 22.320864176158807
+          }
+        },
+        {
+          "start": 3,
+          "success": true,
+          "negative_log_likelihood": 370241.78492365696,
+          "nfev": 28,
+          "continued": false,
+          "optimality": 2733.9678384768613,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 1.1136274320006123,
+          "parameters": {
+            "k1": 0.012671905344631123,
+            "Ea1": 31.964212745541182,
+            "k2": 0.012561638906337555,
+            "Ea2": 22.321845121650227
+          }
+        },
+        {
+          "start": 4,
+          "success": true,
+          "negative_log_likelihood": 370241.78636149236,
+          "nfev": 22,
+          "continued": false,
+          "optimality": 4761.123996314421,
+          "message": "`ftol` termination condition is satisfied.",
+          "elapsed_seconds": 1.007015952999609,
+          "parameters": {
+            "k1": 0.012667386685187673,
+            "Ea1": 31.920565014308504,
+            "k2": 0.012567975566790481,
+            "Ea2": 22.406524457882192
+          }
+        }
+      ]
+    },
+    "M6": {
+      "parameters": {
+        "k1": 0.009634208329017445,
+        "Ea1": 49.84678339283193,
+        "k2": 993.3567601589599,
+        "Ea2": 7.9809941624702425,
+        "k3": 147.99402281465902,
+        "Ea3": 35.25646901005538
+      },
+      "negative_log_likelihood": 208867.08281526197,
+      "training_run_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "n_observations": 244,
+      "n_parameters": 6,
+      "successful_starts": 4,
+      "parameters_at_bounds": [],
+      "successful_start_nll_span": 8.305739648174495,
+      "optimality": 2733.313671213733,
+      "failed_simulation_evaluations": 0,
+      "starts": [
+        {
+          "start": 1,
+          "success": true,
+          "negative_log_likelihood": 208868.71014353004,
+          "nfev": 43,
+          "continued": false,
+          "optimality": 820.4611469762012,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 5.835369219000313,
+          "parameters": {
+            "k1": 0.009634487705063486,
+            "Ea1": 49.848807161677186,
+            "k2": 965.5423597689479,
+            "Ea2": 0.6115525545908624,
+            "k3": 143.85153397110946,
+            "Ea3": 27.945631297354762
+          }
+        },
+        {
+          "start": 2,
+          "success": true,
+          "negative_log_likelihood": 208872.8280495882,
+          "nfev": 46,
+          "continued": false,
+          "optimality": 1090.2815942288958,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 6.321879764999721,
+          "parameters": {
+            "k1": 0.009634459634776903,
+            "Ea1": 49.847654483793285,
+            "k2": 892.2539170814885,
+            "Ea2": 8.174544367483595,
+            "k3": 132.93021994075318,
+            "Ea3": 35.49252570932615
+          }
+        },
+        {
+          "start": 3,
+          "success": true,
+          "negative_log_likelihood": 208875.38855491014,
+          "nfev": 76,
+          "continued": false,
+          "optimality": 1011.4969261104527,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 9.62510765800016,
+          "parameters": {
+            "k1": 0.009634482310398923,
+            "Ea1": 49.84815914423262,
+            "k2": 853.0687034740157,
+            "Ea2": 12.158492576502594,
+            "k3": 127.0931636567754,
+            "Ea3": 39.47320411925689
+          }
+        },
+        {
+          "start": 4,
+          "success": true,
+          "negative_log_likelihood": 208867.08281526197,
+          "nfev": 29,
+          "continued": false,
+          "optimality": 2733.313671213733,
+          "message": "`xtol` termination condition is satisfied.",
+          "elapsed_seconds": 4.15840277999996,
+          "parameters": {
+            "k1": 0.009634208329017445,
+            "Ea1": 49.84678339283193,
+            "k2": 993.3567601589599,
+            "Ea2": 7.9809941624702425,
+            "k3": 147.99402281465902,
+            "Ea3": 35.25646901005538
+          }
+        }
+      ]
+    }
+  },
+  "fold_fits": {
+    "M1": {
+      "A1": {
+        "parameters": {
+          "k1": 0.02991561097646323,
+          "Ea1": 60.00997523689483,
+          "k2": 0.003952528736902303,
+          "Ea2": 70.08054094209044
+        },
+        "negative_log_likelihood": -692.0734475739262,
+        "training_run_ids": [
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 6.347704584186431e-08,
+        "optimality": 0.0016207108887379006,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -692.0734475739262,
+            "nfev": 8,
+            "continued": false,
+            "optimality": 0.0016207108887379006,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.3798438769999848,
+            "parameters": {
+              "k1": 0.02991561097646323,
+              "Ea1": 60.00997523689483,
+              "k2": 0.003952528736902303,
+              "Ea2": 70.08054094209044
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -692.0734475484646,
+            "nfev": 11,
+            "continued": false,
+            "optimality": 0.0027866815100612953,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.454937733999941,
+            "parameters": {
+              "k1": 0.029915610932127402,
+              "Ea1": 60.00997753373527,
+              "k2": 0.003952528724707362,
+              "Ea2": 70.08054931428987
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -692.0734475104491,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.0008261221415541295,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.4880491489993801,
+            "parameters": {
+              "k1": 0.029915610956401818,
+              "Ea1": 60.00997489046711,
+              "k2": 0.003952528723739548,
+              "Ea2": 70.0805392898028
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -692.073447533005,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.0006392112750481106,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.49627511000016966,
+            "parameters": {
+              "k1": 0.029915610974228776,
+              "Ea1": 60.0099738355047,
+              "k2": 0.003952528737260093,
+              "Ea2": 70.08054905477866
+            }
+          }
+        ]
+      },
+      "A2": {
+        "parameters": {
+          "k1": 0.029905069470685268,
+          "Ea1": 59.825684779226954,
+          "k2": 0.003946682302337202,
+          "Ea2": 70.14383139845145
+        },
+        "negative_log_likelihood": -686.0322738327079,
+        "training_run_ids": [
+          "A1",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 8.04994897407596e-08,
+        "optimality": 0.0017860237186463103,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -686.0322737522084,
+            "nfev": 7,
+            "continued": false,
+            "optimality": 0.0019012282005478082,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.34842135200051416,
+            "parameters": {
+              "k1": 0.029905069505543294,
+              "Ea1": 59.82568577254618,
+              "k2": 0.0039466823229239644,
+              "Ea2": 70.1438382739742
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -686.0322737779545,
+            "nfev": 9,
+            "continued": false,
+            "optimality": 0.0013835400604983398,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.39293281699974614,
+            "parameters": {
+              "k1": 0.02990506947422407,
+              "Ea1": 59.825685643802004,
+              "k2": 0.003946682355276482,
+              "Ea2": 70.14383863746188
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -686.0322737790875,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.002289279736484858,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.5506150190003609,
+            "parameters": {
+              "k1": 0.029905069494206044,
+              "Ea1": 59.825685762809044,
+              "k2": 0.003946682310613592,
+              "Ea2": 70.14383511285568
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -686.0322738327079,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.0017860237186463103,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.5426947819996712,
+            "parameters": {
+              "k1": 0.029905069470685268,
+              "Ea1": 59.825684779226954,
+              "k2": 0.003946682302337202,
+              "Ea2": 70.14383139845145
+            }
+          }
+        ]
+      },
+      "A3": {
+        "parameters": {
+          "k1": 0.02994039915921868,
+          "Ea1": 59.84390206484026,
+          "k2": 0.0039175022497992965,
+          "Ea2": 69.20246932662793
+        },
+        "negative_log_likelihood": -683.465036802786,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 3.121112968074158e-08,
+        "optimality": 0.00111227973830192,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -683.4650367715749,
+            "nfev": 7,
+            "continued": false,
+            "optimality": 0.002756642300652315,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.3617453429997113,
+            "parameters": {
+              "k1": 0.029940399363593488,
+              "Ea1": 59.84390395553248,
+              "k2": 0.003917502239675164,
+              "Ea2": 69.20246803941556
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -683.465036802786,
+            "nfev": 12,
+            "continued": false,
+            "optimality": 0.00111227973830192,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.49339628999950946,
+            "parameters": {
+              "k1": 0.02994039915921868,
+              "Ea1": 59.84390206484026,
+              "k2": 0.0039175022497992965,
+              "Ea2": 69.20246932662793
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -683.4650367742354,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.002419306240923011,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.4917778349999935,
+            "parameters": {
+              "k1": 0.029940399413624284,
+              "Ea1": 59.84390412843642,
+              "k2": 0.003917502246707622,
+              "Ea2": 69.20246849824274
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -683.4650367729214,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.0017587637327329327,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.518174531999648,
+            "parameters": {
+              "k1": 0.02994039943134308,
+              "Ea1": 59.843903943840125,
+              "k2": 0.003917502180192084,
+              "Ea2": 69.20246560731272
+            }
+          }
+        ]
+      },
+      "A4": {
+        "parameters": {
+          "k1": 0.029967370979931428,
+          "Ea1": 59.723438877473235,
+          "k2": 0.003958889152605688,
+          "Ea2": 69.99895289292019
+        },
+        "negative_log_likelihood": -701.0439321096014,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 6.145455699879676e-08,
+        "optimality": 0.0068387572748982,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -701.0439320481469,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.021764055689596617,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.33473639099975117,
+            "parameters": {
+              "k1": 0.029967370998604845,
+              "Ea1": 59.7234482658046,
+              "k2": 0.003958888818248065,
+              "Ea2": 69.99894378424804
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -701.0439320664971,
+            "nfev": 11,
+            "continued": false,
+            "optimality": 0.01164025629518236,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.4453197450002335,
+            "parameters": {
+              "k1": 0.029967370997190677,
+              "Ea1": 59.723442488289436,
+              "k2": 0.003958889115134892,
+              "Ea2": 69.99896105751174
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -701.0439320717007,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.0015405846528958166,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.5190326050005751,
+            "parameters": {
+              "k1": 0.02996737104150701,
+              "Ea1": 59.72343958261397,
+              "k2": 0.0039588891475414376,
+              "Ea2": 69.99894061088516
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -701.0439321096014,
+            "nfev": 12,
+            "continued": false,
+            "optimality": 0.0068387572748982,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.5790124089999154,
+            "parameters": {
+              "k1": 0.029967370979931428,
+              "Ea1": 59.723438877473235,
+              "k2": 0.003958889152605688,
+              "Ea2": 69.99895289292019
+            }
+          }
+        ]
+      },
+      "A5": {
+        "parameters": {
+          "k1": 0.029884297753211324,
+          "Ea1": 59.66025457451345,
+          "k2": 0.00398870121792175,
+          "Ea2": 70.96436049811989
+        },
+        "negative_log_likelihood": -702.5478807595521,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "n_observations": 192,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 9.968584890884813e-08,
+        "optimality": 0.0812693391677438,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -702.5478806598662,
+            "nfev": 7,
+            "continued": false,
+            "optimality": 0.003442364671015916,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.3207029099994543,
+            "parameters": {
+              "k1": 0.029884313748937366,
+              "Ea1": 59.660367333010164,
+              "k2": 0.003988700010958074,
+              "Ea2": 70.96431084256447
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -702.5478807595521,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.0812693391677438,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.39579201100059436,
+            "parameters": {
+              "k1": 0.029884297753211324,
+              "Ea1": 59.66025457451345,
+              "k2": 0.00398870121792175,
+              "Ea2": 70.96436049811989
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -702.5478806711635,
+            "nfev": 10,
+            "continued": false,
+            "optimality": 0.002377377663455261,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.47440679500050464,
+            "parameters": {
+              "k1": 0.02988431400928084,
+              "Ea1": 59.66036890347198,
+              "k2": 0.003988700044564564,
+              "Ea2": 70.96431296938542
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -702.5478807017571,
+            "nfev": 13,
+            "continued": false,
+            "optimality": 0.006101515798466554,
+            "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+            "elapsed_seconds": 0.5198742980001043,
+            "parameters": {
+              "k1": 0.02988431346921877,
+              "Ea1": 59.6603651493226,
+              "k2": 0.00398870010517168,
+              "Ea2": 70.96431982452096
+            }
+          }
+        ]
+      }
+    },
+    "M2": {
+      "A1": {
+        "parameters": {
+          "k1": 0.033873830732035475,
+          "Ea1": 61.18361029413404,
+          "k2": 999.9615399298598,
+          "Ea2": 0.002729314670884001,
+          "k3": 132.117646285313,
+          "Ea3": 10.072868181238993
+        },
+        "negative_log_likelihood": -691.995941513678,
+        "training_run_ids": [
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "k2",
+          "Ea2"
+        ],
+        "successful_start_nll_span": 0.1406029435141818,
+        "optimality": 23.43349421104875,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -691.9296308115918,
+            "nfev": 24,
+            "continued": false,
+            "optimality": 0.5177856724210584,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 5.845304282000143,
+            "parameters": {
+              "k1": 0.03387441037749722,
+              "Ea1": 61.18535727084049,
+              "k2": 541.0059767268542,
+              "Ea2": 0.14926197992823764,
+              "k3": 71.47937529860856,
+              "Ea3": 10.21753920005595
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -691.995941513678,
+            "nfev": 34,
+            "continued": false,
+            "optimality": 23.43349421104875,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 8.882494532999772,
+            "parameters": {
+              "k1": 0.033873830732035475,
+              "Ea1": 61.18361029413404,
+              "k2": 999.9615399298598,
+              "Ea2": 0.002729314670884001,
+              "k3": 132.117646285313,
+              "Ea3": 10.072868181238993
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -691.8553385701638,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 15.355638121874499,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 5.375974694000433,
+            "parameters": {
+              "k1": 0.03387556025083454,
+              "Ea1": 61.18629293996914,
+              "k2": 357.8095844688183,
+              "Ea2": 2.5524330032675996e-07,
+              "k3": 47.27675288094693,
+              "Ea3": 10.068283259069128
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -691.9945907706881,
+            "nfev": 28,
+            "continued": false,
+            "optimality": 0.08593683187340406,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 7.993193084000268,
+            "parameters": {
+              "k1": 0.0338735297780489,
+              "Ea1": 61.18542317108041,
+              "k2": 999.9848430767283,
+              "Ea2": 3.622601256761568,
+              "k3": 132.12079807656775,
+              "Ea3": 13.693089351196619
+            }
+          }
+        ]
+      },
+      "A2": {
+        "parameters": {
+          "k1": 0.03387735927403041,
+          "Ea1": 60.85422473765415,
+          "k2": 135.65185122036627,
+          "Ea2": 169.73486642909222,
+          "k3": 17.90303246583424,
+          "Ea3": 179.9983551204557
+        },
+        "negative_log_likelihood": -686.2832069021972,
+        "training_run_ids": [
+          "A1",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "Ea3"
+        ],
+        "successful_start_nll_span": 0.0002617321400748551,
+        "optimality": 0.6123706114894713,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -686.2830808863504,
+            "nfev": 31,
+            "continued": false,
+            "optimality": 1.419912963183175,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 7.460722461999467,
+            "parameters": {
+              "k1": 0.03387761251142086,
+              "Ea1": 60.85282538031004,
+              "k2": 133.72573549495425,
+              "Ea2": 169.73508034307687,
+              "k3": 17.648885783308184,
+              "Ea3": 179.99796181344908
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -686.2829451700571,
+            "nfev": 43,
+            "continued": false,
+            "optimality": 1.2839693161401835,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 11.349080302999937,
+            "parameters": {
+              "k1": 0.033877773002362666,
+              "Ea1": 60.85111966484642,
+              "k2": 132.45745000192062,
+              "Ea2": 169.73594125840822,
+              "k3": 17.481470485441125,
+              "Ea3": 179.99880486071493
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -686.2832069021972,
+            "nfev": 38,
+            "continued": false,
+            "optimality": 0.6123706114894713,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 8.119138908999957,
+            "parameters": {
+              "k1": 0.03387735927403041,
+              "Ea1": 60.85422473765415,
+              "k2": 135.65185122036627,
+              "Ea2": 169.73486642909222,
+              "k3": 17.90303246583424,
+              "Ea3": 179.9983551204557
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -686.2831259336402,
+            "nfev": 26,
+            "continued": false,
+            "optimality": 1.2330667871826713,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 8.096785656000066,
+            "parameters": {
+              "k1": 0.03387758739319207,
+              "Ea1": 60.852565873014406,
+              "k2": 133.90859572703818,
+              "Ea2": 169.73715048267272,
+              "k3": 17.673014617746826,
+              "Ea3": 179.99999928874288
+            }
+          }
+        ]
+      },
+      "A3": {
+        "parameters": {
+          "k1": 0.033871450865773804,
+          "Ea1": 60.72975110621665,
+          "k2": 121.29798670754768,
+          "Ea2": 170.69917811068538,
+          "k3": 15.869290162205564,
+          "Ea3": 179.9990280641911
+        },
+        "negative_log_likelihood": -683.9000759149308,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "Ea3"
+        ],
+        "successful_start_nll_span": 0.5197996449176117,
+        "optimality": 1.1735522150771043,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -683.9000149527103,
+            "nfev": 40,
+            "continued": false,
+            "optimality": 0.4667689084730092,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 12.509226385000147,
+            "parameters": {
+              "k1": 0.03387155729314287,
+              "Ea1": 60.72837065197471,
+              "k2": 120.19165867205609,
+              "Ea2": 170.70046562863496,
+              "k3": 15.724540760682073,
+              "Ea3": 179.99999298879533
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -683.9000759149308,
+            "nfev": 45,
+            "continued": false,
+            "optimality": 1.1735522150771043,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 10.520274859999518,
+            "parameters": {
+              "k1": 0.033871450865773804,
+              "Ea1": 60.72975110621665,
+              "k2": 121.29798670754768,
+              "Ea2": 170.69917811068538,
+              "k3": 15.869290162205564,
+              "Ea3": 179.9990280641911
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -683.3802762700132,
+            "nfev": 35,
+            "continued": false,
+            "optimality": 0.20041523750735704,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 7.664821145000133,
+            "parameters": {
+              "k1": 0.033862541003606875,
+              "Ea1": 60.88346994863274,
+              "k2": 865.6264929867741,
+              "Ea2": 1.9978924726765883,
+              "k3": 113.25674270852217,
+              "Ea3": 11.346770689978005
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -683.8994514121746,
+            "nfev": 22,
+            "continued": false,
+            "optimality": 1.267914901835097,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 8.799249605999648,
+            "parameters": {
+              "k1": 0.03387178611179135,
+              "Ea1": 60.72496947858584,
+              "k2": 117.56491538475011,
+              "Ea2": 170.7016381397573,
+              "k3": 15.380876742934827,
+              "Ea3": 179.9997601452091
+            }
+          }
+        ]
+      },
+      "A4": {
+        "parameters": {
+          "k1": 0.03399508669673711,
+          "Ea1": 60.47989139465615,
+          "k2": 45.67000715403153,
+          "Ea2": 169.80683451413688,
+          "k3": 6.034939383259738,
+          "Ea3": 179.999995127343
+        },
+        "negative_log_likelihood": -704.4126281401434,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "Ea3"
+        ],
+        "successful_start_nll_span": 1.6777226392150624e-05,
+        "optimality": 0.33404182279075895,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -704.4126281401434,
+            "nfev": 28,
+            "continued": false,
+            "optimality": 0.33404182279075895,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 9.17462720200001,
+            "parameters": {
+              "k1": 0.03399508669673711,
+              "Ea1": 60.47989139465615,
+              "k2": 45.67000715403153,
+              "Ea2": 169.80683451413688,
+              "k3": 6.034939383259738,
+              "Ea3": 179.999995127343
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -704.4126142451828,
+            "nfev": 32,
+            "continued": false,
+            "optimality": 0.6587395899918628,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 9.846049173999745,
+            "parameters": {
+              "k1": 0.033994989627192294,
+              "Ea1": 60.48050677525444,
+              "k2": 45.740578197214674,
+              "Ea2": 169.80676755394845,
+              "k3": 6.0442627272849805,
+              "Ea3": 179.99987556438347
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -704.4126270240641,
+            "nfev": 30,
+            "continued": false,
+            "optimality": 0.12431259211717494,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 8.935997390000011,
+            "parameters": {
+              "k1": 0.033995089177872105,
+              "Ea1": 60.479894355738494,
+              "k2": 45.67079800588715,
+              "Ea2": 169.80677914053555,
+              "k3": 6.035045900224381,
+              "Ea3": 179.9999880353535
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -704.412611362917,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 0.6500334018713854,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 10.706203597999775,
+            "parameters": {
+              "k1": 0.03399497807403438,
+              "Ea1": 60.48060566014553,
+              "k2": 45.74994332727601,
+              "Ea2": 169.80673864722627,
+              "k3": 6.045499442517484,
+              "Ea3": 179.9998118912122
+            }
+          }
+        ]
+      },
+      "A5": {
+        "parameters": {
+          "k1": 0.03388534709755018,
+          "Ea1": 60.79775633043665,
+          "k2": 143.07915870999614,
+          "Ea2": 168.7542676683242,
+          "k3": 19.09447859759219,
+          "Ea3": 179.9989250363436
+        },
+        "negative_log_likelihood": -702.7867653962012,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "n_observations": 192,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "Ea3"
+        ],
+        "successful_start_nll_span": 9.781375320017105e-05,
+        "optimality": 0.4233008096477172,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": -702.7867008882375,
+            "nfev": 38,
+            "continued": false,
+            "optimality": 1.8072743537679936,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 7.836078551000355,
+            "parameters": {
+              "k1": 0.033885417662150585,
+              "Ea1": 60.797195837777686,
+              "k2": 142.3276228431205,
+              "Ea2": 168.75588123457953,
+              "k3": 18.994214968664295,
+              "Ea3": 179.99997362870405
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": -702.7866858137064,
+            "nfev": 44,
+            "continued": false,
+            "optimality": 0.43794947848640214,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 9.346753265000189,
+            "parameters": {
+              "k1": 0.03388540723227296,
+              "Ea1": 60.79720824153948,
+              "k2": 142.32245981517087,
+              "Ea2": 168.75471521530216,
+              "k3": 18.993480041221734,
+              "Ea3": 179.99894370098616
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": -702.7867653962012,
+            "nfev": 37,
+            "continued": false,
+            "optimality": 0.4233008096477172,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 8.460774956999558,
+            "parameters": {
+              "k1": 0.03388534709755018,
+              "Ea1": 60.79775633043665,
+              "k2": 143.07915870999614,
+              "Ea2": 168.7542676683242,
+              "k3": 19.09447859759219,
+              "Ea3": 179.9989250363436
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": -702.786667582448,
+            "nfev": 25,
+            "continued": false,
+            "optimality": 0.4540661239655113,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 6.397203411000191,
+            "parameters": {
+              "k1": 0.03388541189879842,
+              "Ea1": 60.79689152845964,
+              "k2": 142.06329376260072,
+              "Ea2": 168.75588931419588,
+              "k3": 18.95887530610969,
+              "Ea3": 179.99992639540082
+            }
+          }
+        ]
+      }
+    },
+    "M3": {
+      "A1": {
+        "parameters": {
+          "k1": 0.05435936607437755,
+          "Ea1": 73.52906706879652,
+          "k2": 0.004006118934880285,
+          "Ea2": 45.09027760522
+        },
+        "negative_log_likelihood": 151205.18384712323,
+        "training_run_ids": [
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.010230137326288968,
+        "optimality": 1729.426806805454,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 151205.19407726056,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 561.2567976688315,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.1042153749995123,
+            "parameters": {
+              "k1": 0.05435370455419604,
+              "Ea1": 73.52347652010525,
+              "k2": 0.004006606202319307,
+              "Ea2": 45.07198746928159
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 151205.1930134338,
+            "nfev": 32,
+            "continued": false,
+            "optimality": 98.73913363486236,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.2400706300004458,
+            "parameters": {
+              "k1": 0.05435424425324331,
+              "Ea1": 73.53426722301847,
+              "k2": 0.004006725616327762,
+              "Ea2": 45.08097576431866
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 151205.18384712323,
+            "nfev": 31,
+            "continued": false,
+            "optimality": 1729.426806805454,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.3576537949993508,
+            "parameters": {
+              "k1": 0.05435936607437755,
+              "Ea1": 73.52906706879652,
+              "k2": 0.004006118934880285,
+              "Ea2": 45.09027760522
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 151205.1842454741,
+            "nfev": 30,
+            "continued": false,
+            "optimality": 2029.9439186879272,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.3086385410006187,
+            "parameters": {
+              "k1": 0.05435570383753549,
+              "Ea1": 73.51167335570517,
+              "k2": 0.004006111380629615,
+              "Ea2": 45.102120924834274
+            }
+          }
+        ]
+      },
+      "A2": {
+        "parameters": {
+          "k1": 0.05413981020004195,
+          "Ea1": 62.88208233803461,
+          "k2": 0.0040960052810487995,
+          "Ea2": 34.022560056494136
+        },
+        "negative_log_likelihood": 155025.3892353072,
+        "training_run_ids": [
+          "A1",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.05475662957178429,
+        "optimality": 982.1946965553184,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 155025.39484301885,
+            "nfev": 34,
+            "continued": false,
+            "optimality": 33.14800498988709,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.422980228000597,
+            "parameters": {
+              "k1": 0.054137179207683725,
+              "Ea1": 62.88279029960743,
+              "k2": 0.004096409471468301,
+              "Ea2": 34.03167985127015
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 155025.4208604428,
+            "nfev": 30,
+            "continued": false,
+            "optimality": 1054.8800729851898,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.040369510000346,
+            "parameters": {
+              "k1": 0.05412760552946771,
+              "Ea1": 62.85775650787399,
+              "k2": 0.004096692649779727,
+              "Ea2": 34.06264255731865
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 155025.44399193677,
+            "nfev": 32,
+            "continued": false,
+            "optimality": 2031.7164396216147,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.4233364179999626,
+            "parameters": {
+              "k1": 0.05413136512864982,
+              "Ea1": 62.840246012918755,
+              "k2": 0.0040962087718289086,
+              "Ea2": 34.08043898322109
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 155025.3892353072,
+            "nfev": 31,
+            "continued": false,
+            "optimality": 982.1946965553184,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.353428886999609,
+            "parameters": {
+              "k1": 0.05413981020004195,
+              "Ea1": 62.88208233803461,
+              "k2": 0.0040960052810487995,
+              "Ea2": 34.022560056494136
+            }
+          }
+        ]
+      },
+      "A3": {
+        "parameters": {
+          "k1": 0.05294285437418646,
+          "Ea1": 58.6552373243286,
+          "k2": 0.004156506779280654,
+          "Ea2": 36.46469329252217
+        },
+        "negative_log_likelihood": 145933.22070632962,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.026315611554309726,
+        "optimality": 1650.2663955843425,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 145933.23583187713,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 1790.3367467095784,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.0920933050001622,
+            "parameters": {
+              "k1": 0.0529468536966992,
+              "Ea1": 58.65334456964425,
+              "k2": 0.004156674254013414,
+              "Ea2": 36.48439971817336
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 145933.22070632962,
+            "nfev": 28,
+            "continued": false,
+            "optimality": 1650.2663955843425,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.1005451979999634,
+            "parameters": {
+              "k1": 0.05294285437418646,
+              "Ea1": 58.6552373243286,
+              "k2": 0.004156506779280654,
+              "Ea2": 36.46469329252217
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 145933.23595115708,
+            "nfev": 35,
+            "continued": false,
+            "optimality": 1378.118875029099,
+            "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+            "elapsed_seconds": 1.523851623000155,
+            "parameters": {
+              "k1": 0.052936209344717815,
+              "Ea1": 58.62453073864131,
+              "k2": 0.00415697006100822,
+              "Ea2": 36.48834847684746
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 145933.24702194118,
+            "nfev": 24,
+            "continued": false,
+            "optimality": 942.0222416458522,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.075569761999759,
+            "parameters": {
+              "k1": 0.05294144282525751,
+              "Ea1": 58.62671125662797,
+              "k2": 0.00415711171837807,
+              "Ea2": 36.49683101304929
+            }
+          }
+        ]
+      },
+      "A4": {
+        "parameters": {
+          "k1": 0.05795687071431782,
+          "Ea1": 59.667883180400004,
+          "k2": 0.004227596195301803,
+          "Ea2": 31.78252159640227
+        },
+        "negative_log_likelihood": 137626.10328640585,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.00757945142686367,
+        "optimality": 934.6510549333786,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 137626.1067163656,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 432.89866218689764,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.3316748870001902,
+            "parameters": {
+              "k1": 0.05795969313178841,
+              "Ea1": 59.6477437620874,
+              "k2": 0.004227658161014363,
+              "Ea2": 31.783697430042196
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 137626.11086585728,
+            "nfev": 26,
+            "continued": false,
+            "optimality": 1221.8724239446824,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.439474980000341,
+            "parameters": {
+              "k1": 0.05796692601878459,
+              "Ea1": 59.64036419079498,
+              "k2": 0.004227209945209359,
+              "Ea2": 31.787285809428447
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 137626.10745477385,
+            "nfev": 26,
+            "continued": false,
+            "optimality": 275.5585665304557,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.434113076000358,
+            "parameters": {
+              "k1": 0.05796135856363601,
+              "Ea1": 59.678586813052235,
+              "k2": 0.00422766992426602,
+              "Ea2": 31.7667107070493
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 137626.10328640585,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 934.6510549333786,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.3344466349999493,
+            "parameters": {
+              "k1": 0.05795687071431782,
+              "Ea1": 59.667883180400004,
+              "k2": 0.004227596195301803,
+              "Ea2": 31.78252159640227
+            }
+          }
+        ]
+      },
+      "A5": {
+        "parameters": {
+          "k1": 0.05369457858440629,
+          "Ea1": 61.1215377055771,
+          "k2": 0.0039013449450979454,
+          "Ea2": 28.707897201820675
+        },
+        "negative_log_likelihood": 141064.208430901,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "n_observations": 192,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.08172476227628067,
+        "optimality": 771.1260288024499,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 141064.22587004912,
+            "nfev": 28,
+            "continued": false,
+            "optimality": 1971.4147230700376,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.3149829980002323,
+            "parameters": {
+              "k1": 0.05370064246380783,
+              "Ea1": 61.12657272048406,
+              "k2": 0.0039011050224881435,
+              "Ea2": 28.722639658689992
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 141064.22118295784,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 447.7641365601395,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.9397535050002261,
+            "parameters": {
+              "k1": 0.05369737642927645,
+              "Ea1": 61.12600697520971,
+              "k2": 0.0039015286564841743,
+              "Ea2": 28.716098064594348
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 141064.29015566327,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 1378.5078596003802,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.9555383899996741,
+            "parameters": {
+              "k1": 0.053701168122610776,
+              "Ea1": 61.14083694932098,
+              "k2": 0.0039017038177697936,
+              "Ea2": 28.74359923885843
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 141064.208430901,
+            "nfev": 30,
+            "continued": false,
+            "optimality": 771.1260288024499,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.073720955000681,
+            "parameters": {
+              "k1": 0.05369457858440629,
+              "Ea1": 61.1215377055771,
+              "k2": 0.0039013449450979454,
+              "Ea2": 28.707897201820675
+            }
+          }
+        ]
+      }
+    },
+    "M4": {
+      "A1": {
+        "parameters": {
+          "k1": 0.028620993123699198,
+          "Ea1": 50.49022800521943,
+          "k2": 172.69619275785803,
+          "Ea2": 98.12584896604393,
+          "k3": 30.277612119112124,
+          "Ea3": 36.87352612870256
+        },
+        "negative_log_likelihood": 7855.661930683642,
+        "training_run_ids": [
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 1.186718700468191,
+        "optimality": 136.58264070497654,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 7856.84864938411,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 198.8795783671124,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.1115402170007656,
+            "parameters": {
+              "k1": 0.028621814340755,
+              "Ea1": 50.499848560798185,
+              "k2": 145.51267134177255,
+              "Ea2": 61.4051450388556,
+              "k3": 25.514672942834164,
+              "Ea3": 0.11390554672889698
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 7856.413638147576,
+            "nfev": 30,
+            "continued": false,
+            "optimality": 136.66012941475316,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.770520584000224,
+            "parameters": {
+              "k1": 0.02862148722426935,
+              "Ea1": 50.489106744046396,
+              "k2": 156.17764552285092,
+              "Ea2": 96.87397735406302,
+              "k3": 27.38170085096739,
+              "Ea3": 35.598493160468166
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 7855.661930683642,
+            "nfev": 46,
+            "continued": false,
+            "optimality": 136.58264070497654,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 6.634898446000079,
+            "parameters": {
+              "k1": 0.028620993123699198,
+              "Ea1": 50.49022800521943,
+              "k2": 172.69619275785803,
+              "Ea2": 98.12584896604393,
+              "k3": 30.277612119112124,
+              "Ea3": 36.87352612870256
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 7856.358946181343,
+            "nfev": 26,
+            "continued": false,
+            "optimality": 152.16456369545548,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 6.294765636000193,
+            "parameters": {
+              "k1": 0.028621670848328135,
+              "Ea1": 50.48743851940327,
+              "k2": 157.73009901177946,
+              "Ea2": 99.98657295519754,
+              "k3": 27.653868891287196,
+              "Ea3": 38.69757293327041
+            }
+          }
+        ]
+      },
+      "A2": {
+        "parameters": {
+          "k1": 0.028085404329736458,
+          "Ea1": 51.911119030857044,
+          "k2": 477.36974957635647,
+          "Ea2": 62.72950723534388,
+          "k3": 80.60158780141087,
+          "Ea3": 32.4109617249795
+        },
+        "negative_log_likelihood": 9060.496843199242,
+        "training_run_ids": [
+          "A1",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 5.982658971350247,
+        "optimality": 156.70398128483447,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 9060.496843199242,
+            "nfev": 21,
+            "continued": false,
+            "optimality": 156.70398128483447,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 3.979627194999921,
+            "parameters": {
+              "k1": 0.028085404329736458,
+              "Ea1": 51.911119030857044,
+              "k2": 477.36974957635647,
+              "Ea2": 62.72950723534388,
+              "k3": 80.60158780141087,
+              "Ea3": 32.4109617249795
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 9066.479502170592,
+            "nfev": 28,
+            "continued": false,
+            "optimality": 75.55318625727176,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.6891770000002,
+            "parameters": {
+              "k1": 0.028089390440199306,
+              "Ea1": 51.90508583981187,
+              "k2": 147.540860480048,
+              "Ea2": 48.30721834400449,
+              "k3": 24.909661162461152,
+              "Ea3": 18.000314736363872
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 9064.727360691872,
+            "nfev": 45,
+            "continued": false,
+            "optimality": 175.29056636214278,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 6.333404920000248,
+            "parameters": {
+              "k1": 0.028087851979099444,
+              "Ea1": 51.90660141382002,
+              "k2": 193.3617076409663,
+              "Ea2": 68.24215439144527,
+              "k3": 32.64487908757784,
+              "Ea3": 37.957297959455765
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 9066.243840445763,
+            "nfev": 25,
+            "continued": false,
+            "optimality": 282.0338873022103,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 5.709160686999894,
+            "parameters": {
+              "k1": 0.028089641225094372,
+              "Ea1": 51.89973289765808,
+              "k2": 158.48439225956582,
+              "Ea2": 66.82853928328157,
+              "k3": 26.75329665135017,
+              "Ea3": 36.52687356047455
+            }
+          }
+        ]
+      },
+      "A3": {
+        "parameters": {
+          "k1": 0.028023252388115677,
+          "Ea1": 51.01886089701383,
+          "k2": 950.622273268596,
+          "Ea2": 39.96267441492275,
+          "k3": 147.99340986650424,
+          "Ea3": 4.853400595328259
+        },
+        "negative_log_likelihood": 8123.298052341897,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 6.8727951580713125,
+        "optimality": 190.8690786810818,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 8130.170847499969,
+            "nfev": 25,
+            "continued": false,
+            "optimality": 13.264460745593631,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 4.1329163259997586,
+            "parameters": {
+              "k1": 0.02803047061139319,
+              "Ea1": 51.01961121134116,
+              "k2": 152.72399140964893,
+              "Ea2": 52.80551579078728,
+              "k3": 23.77030028020723,
+              "Ea3": 17.687407729234575
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 8123.298052341897,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 190.8690786810818,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.554901456999687,
+            "parameters": {
+              "k1": 0.028023252388115677,
+              "Ea1": 51.01886089701383,
+              "k2": 950.622273268596,
+              "Ea2": 39.96267441492275,
+              "k3": 147.99340986650424,
+              "Ea3": 4.853400595328259
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 8126.117563838292,
+            "nfev": 48,
+            "continued": false,
+            "optimality": 113.73412052424682,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 5.820876768000744,
+            "parameters": {
+              "k1": 0.028026201452360983,
+              "Ea1": 51.02187500643415,
+              "k2": 307.9917752471401,
+              "Ea2": 55.066879631404106,
+              "k3": 47.939998474824606,
+              "Ea3": 19.943243464051765
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 8129.797948189482,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 64.20516610951651,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 5.3431891210002505,
+            "parameters": {
+              "k1": 0.028029038402062157,
+              "Ea1": 51.01308938488334,
+              "k2": 173.7400638640567,
+              "Ea2": 70.45555882257052,
+              "k3": 27.04296011061261,
+              "Ea3": 35.35914919285067
+            }
+          }
+        ]
+      },
+      "A4": {
+        "parameters": {
+          "k1": 0.02848839047655617,
+          "Ea1": 52.18231323348104,
+          "k2": 165.38196221197268,
+          "Ea2": 77.6162064046344,
+          "k3": 22.65175062059564,
+          "Ea3": 69.46661009129576
+        },
+        "negative_log_likelihood": 6395.944809282789,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 1.1704874534616465,
+        "optimality": 38.18237582700451,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 6397.1152967362505,
+            "nfev": 21,
+            "continued": false,
+            "optimality": 131.1135030480395,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 4.920725017000223,
+            "parameters": {
+              "k1": 0.028490210384964482,
+              "Ea1": 52.177120907185014,
+              "k2": 136.20042152386674,
+              "Ea2": 75.02294438972946,
+              "k3": 18.65264877872956,
+              "Ea3": 66.86579086522528
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 6396.908345527983,
+            "nfev": 30,
+            "continued": false,
+            "optimality": 12.765792225263619,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.955120911999984,
+            "parameters": {
+              "k1": 0.028490243171146616,
+              "Ea1": 52.17416936267163,
+              "k2": 140.81779891336066,
+              "Ea2": 87.94203546418335,
+              "k3": 19.28647688729835,
+              "Ea3": 79.79869529064364
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 6395.944809282789,
+            "nfev": 46,
+            "continued": false,
+            "optimality": 38.18237582700451,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 6.705283169000722,
+            "parameters": {
+              "k1": 0.02848839047655617,
+              "Ea1": 52.18231323348104,
+              "k2": 165.38196221197268,
+              "Ea2": 77.6162064046344,
+              "k3": 22.65175062059564,
+              "Ea3": 69.46661009129576
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 6396.916305870758,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 50.22636865679199,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 6.932581449000281,
+            "parameters": {
+              "k1": 0.02849014964765102,
+              "Ea1": 52.178292502302256,
+              "k2": 140.38769596301148,
+              "Ea2": 76.1419169168788,
+              "k3": 19.22716531204583,
+              "Ea3": 67.98462672057757
+            }
+          }
+        ]
+      },
+      "A5": {
+        "parameters": {
+          "k1": 0.02915009105459007,
+          "Ea1": 54.38514778767405,
+          "k2": 297.60389969847154,
+          "Ea2": 37.09488451745786,
+          "k3": 59.59736830189122,
+          "Ea3": 34.628964647726086
+        },
+        "negative_log_likelihood": 5658.059033414858,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "n_observations": 192,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 2.6456347323755836,
+        "optimality": 117.70281570836491,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 5658.059033414858,
+            "nfev": 25,
+            "continued": false,
+            "optimality": 117.70281570836491,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 4.053827959000046,
+            "parameters": {
+              "k1": 0.02915009105459007,
+              "Ea1": 54.38514778767405,
+              "k2": 297.60389969847154,
+              "Ea2": 37.09488451745786,
+              "k3": 59.59736830189122,
+              "Ea3": 34.628964647726086
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 5659.838088156792,
+            "nfev": 26,
+            "continued": false,
+            "optimality": 68.91229106309227,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 3.871026298000288,
+            "parameters": {
+              "k1": 0.029151685300470773,
+              "Ea1": 54.38572473765244,
+              "k2": 177.97924337174777,
+              "Ea2": 18.684324813653628,
+              "k3": 35.643290934834475,
+              "Ea3": 16.215950613459064
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 5660.704668147234,
+            "nfev": 39,
+            "continued": false,
+            "optimality": 89.57340673040791,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 5.151262887000485,
+            "parameters": {
+              "k1": 0.02915269719271416,
+              "Ea1": 54.38169308957741,
+              "k2": 161.1528425844891,
+              "Ea2": 38.37020172854103,
+              "k3": 32.26884104709923,
+              "Ea3": 35.90007970652092
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 5659.619018019165,
+            "nfev": 25,
+            "continued": false,
+            "optimality": 90.31242521730637,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.9680540499994095,
+            "parameters": {
+              "k1": 0.029151904131910194,
+              "Ea1": 54.385967216547556,
+              "k2": 191.41702975479498,
+              "Ea2": 27.39935588168891,
+              "k3": 38.33153620419358,
+              "Ea3": 24.936932418302554
+            }
+          }
+        ]
+      }
+    },
+    "M5": {
+      "A1": {
+        "parameters": {
+          "k1": 0.012949921515616065,
+          "Ea1": 27.44082516894238,
+          "k2": 0.013062617023963696,
+          "Ea2": 3.95121647949782
+        },
+        "negative_log_likelihood": 314237.98357714585,
+        "training_run_ids": [
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.033886421006172895,
+        "optimality": 1784.374535291807,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 314237.98556072504,
+            "nfev": 35,
+            "continued": false,
+            "optimality": 262.4383747348647,
+            "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+            "elapsed_seconds": 1.3203197370003181,
+            "parameters": {
+              "k1": 0.012950116448311306,
+              "Ea1": 27.449757187339234,
+              "k2": 0.013063420127086847,
+              "Ea2": 3.912479619289397
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 314238.01746356685,
+            "nfev": 41,
+            "continued": false,
+            "optimality": 3664.8682099105654,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.5243943340001351,
+            "parameters": {
+              "k1": 0.012951590309174695,
+              "Ea1": 27.452650182497703,
+              "k2": 0.013058686762311476,
+              "Ea2": 3.938814128252716
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 314238.0042658693,
+            "nfev": 40,
+            "continued": false,
+            "optimality": 3746.9139259854355,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.37566795299972,
+            "parameters": {
+              "k1": 0.012949617168071165,
+              "Ea1": 27.485271416988255,
+              "k2": 0.013062095542816584,
+              "Ea2": 3.902624593462261
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 314237.98357714585,
+            "nfev": 48,
+            "continued": false,
+            "optimality": 1784.374535291807,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.6919107519997851,
+            "parameters": {
+              "k1": 0.012949921515616065,
+              "Ea1": 27.44082516894238,
+              "k2": 0.013062617023963696,
+              "Ea2": 3.95121647949782
+            }
+          }
+        ]
+      },
+      "A2": {
+        "parameters": {
+          "k1": 0.012481472293222304,
+          "Ea1": 32.83330344062191,
+          "k2": 0.013012686681592367,
+          "Ea2": 19.627460789034213
+        },
+        "negative_log_likelihood": 318001.0254719021,
+        "training_run_ids": [
+          "A1",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.025672663236036897,
+        "optimality": 264.441594348409,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 318001.0254719021,
+            "nfev": 52,
+            "continued": false,
+            "optimality": 264.441594348409,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.8690766509998866,
+            "parameters": {
+              "k1": 0.012481472293222304,
+              "Ea1": 32.83330344062191,
+              "k2": 0.013012686681592367,
+              "Ea2": 19.627460789034213
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 318001.0264834914,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 700.5751189992922,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.8568355899997186,
+            "parameters": {
+              "k1": 0.012481534649262315,
+              "Ea1": 32.81914990698804,
+              "k2": 0.013012108177812362,
+              "Ea2": 19.653956732873723
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 318001.03065165214,
+            "nfev": 30,
+            "continued": false,
+            "optimality": 4352.470606284007,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.0485388980005155,
+            "parameters": {
+              "k1": 0.012481983856787211,
+              "Ea1": 32.827425340962634,
+              "k2": 0.01300969090043608,
+              "Ea2": 19.632154078323854
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 318001.05114456534,
+            "nfev": 37,
+            "continued": false,
+            "optimality": 1542.2392072495636,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.285122051000144,
+            "parameters": {
+              "k1": 0.012482466448485458,
+              "Ea1": 32.83502907545807,
+              "k2": 0.01301002339525317,
+              "Ea2": 19.651470998412908
+            }
+          }
+        ]
+      },
+      "A3": {
+        "parameters": {
+          "k1": 0.01267573538752425,
+          "Ea1": 33.23651466684674,
+          "k2": 0.011775658084801957,
+          "Ea2": 13.721914258465093
+        },
+        "negative_log_likelihood": 279304.1628320347,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.15747034654486924,
+        "optimality": 2563.628780695488,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 279304.27237968775,
+            "nfev": 43,
+            "continued": false,
+            "optimality": 3859.942695834807,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 1.5265861970001424,
+            "parameters": {
+              "k1": 0.012673429455396951,
+              "Ea1": 33.20189464159238,
+              "k2": 0.011778905521736905,
+              "Ea2": 13.811507413173327
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 279304.1632454418,
+            "nfev": 28,
+            "continued": false,
+            "optimality": 161.55239386401604,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 0.9574549649996698,
+            "parameters": {
+              "k1": 0.01267957276163327,
+              "Ea1": 33.2702234269186,
+              "k2": 0.011771442210769093,
+              "Ea2": 13.67089319127594
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 279304.32030238124,
+            "nfev": 33,
+            "continued": false,
+            "optimality": 2277.2472432203676,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.0651497899998503,
+            "parameters": {
+              "k1": 0.012687848610561773,
+              "Ea1": 33.352513419746685,
+              "k2": 0.011758789060982388,
+              "Ea2": 13.532427592753146
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 279304.1628320347,
+            "nfev": 31,
+            "continued": false,
+            "optimality": 2563.628780695488,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.9004128330007006,
+            "parameters": {
+              "k1": 0.01267573538752425,
+              "Ea1": 33.23651466684674,
+              "k2": 0.011775658084801957,
+              "Ea2": 13.721914258465093
+            }
+          }
+        ]
+      },
+      "A4": {
+        "parameters": {
+          "k1": 0.012900595292354504,
+          "Ea1": 30.238952760486505,
+          "k2": 0.011191050118390895,
+          "Ea2": 33.9400529570938
+        },
+        "negative_log_likelihood": 277125.357997542,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.31877340469509363,
+        "optimality": 2719.3001142752914,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 277125.357997542,
+            "nfev": 34,
+            "continued": false,
+            "optimality": 2719.3001142752914,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.3353329030005625,
+            "parameters": {
+              "k1": 0.012900595292354504,
+              "Ea1": 30.238952760486505,
+              "k2": 0.011191050118390895,
+              "Ea2": 33.9400529570938
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 277125.3588425815,
+            "nfev": 34,
+            "continued": false,
+            "optimality": 1657.8517113186792,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.284196967999378,
+            "parameters": {
+              "k1": 0.012900487550459269,
+              "Ea1": 30.234291754879095,
+              "k2": 0.011191765284051698,
+              "Ea2": 33.93977592253538
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 277125.3781948971,
+            "nfev": 40,
+            "continued": false,
+            "optimality": 1137.553748252937,
+            "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+            "elapsed_seconds": 1.5595493480004734,
+            "parameters": {
+              "k1": 0.012901502770653423,
+              "Ea1": 30.222617287342835,
+              "k2": 0.01119063170315138,
+              "Ea2": 33.95533372290663
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 277125.6767709467,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 1338.268919132469,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.8300661490002312,
+            "parameters": {
+              "k1": 0.01289968149697939,
+              "Ea1": 30.133245420299804,
+              "k2": 0.01119263608458853,
+              "Ea2": 34.12114782597689
+            }
+          }
+        ]
+      },
+      "A5": {
+        "parameters": {
+          "k1": 0.013653648241573538,
+          "Ea1": 36.95724564065555,
+          "k2": 0.013895265270378451,
+          "Ea2": 36.32878440574941
+        },
+        "negative_log_likelihood": 241731.8013496221,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "n_observations": 192,
+        "n_parameters": 4,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 0.017430810577934608,
+        "optimality": 3259.713617184699,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 241731.81325599656,
+            "nfev": 24,
+            "continued": false,
+            "optimality": 1890.20590485602,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.729615006000131,
+            "parameters": {
+              "k1": 0.01365389103178274,
+              "Ea1": 36.94966980152774,
+              "k2": 0.01389480237556871,
+              "Ea2": 36.320670403755955
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 241731.8187804327,
+            "nfev": 35,
+            "continued": false,
+            "optimality": 90.8545666700073,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 1.2554856859997017,
+            "parameters": {
+              "k1": 0.013655230426091078,
+              "Ea1": 36.961565586434645,
+              "k2": 0.01389466758891395,
+              "Ea2": 36.32398785938331
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 241731.8013496221,
+            "nfev": 26,
+            "continued": false,
+            "optimality": 3259.713617184699,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.8478758809997089,
+            "parameters": {
+              "k1": 0.013653648241573538,
+              "Ea1": 36.95724564065555,
+              "k2": 0.013895265270378451,
+              "Ea2": 36.32878440574941
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 241731.81429088992,
+            "nfev": 27,
+            "continued": false,
+            "optimality": 2694.117425284175,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 0.9438668780003354,
+            "parameters": {
+              "k1": 0.013655005338139044,
+              "Ea1": 36.9652636675059,
+              "k2": 0.013893633919078295,
+              "Ea2": 36.32554332467923
+            }
+          }
+        ]
+      }
+    },
+    "M6": {
+      "A1": {
+        "parameters": {
+          "k1": 0.009454495164914903,
+          "Ea1": 57.79241200547208,
+          "k2": 998.1541216082239,
+          "Ea2": 68.97068722588308,
+          "k3": 136.1409881295785,
+          "Ea3": 122.68794769608482
+        },
+        "negative_log_likelihood": 180792.19362998646,
+        "training_run_ids": [
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "k2"
+        ],
+        "successful_start_nll_span": 4.931517406104831,
+        "optimality": 358.3204776042971,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 180795.27454480625,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 1143.0264079768306,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 3.6356455079994703,
+            "parameters": {
+              "k1": 0.009454657689044596,
+              "Ea1": 57.79157739016726,
+              "k2": 928.286464017548,
+              "Ea2": 74.18372116617716,
+              "k3": 126.59738204007604,
+              "Ea3": 127.93024220559448
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 180792.19362998646,
+            "nfev": 43,
+            "continued": false,
+            "optimality": 358.3204776042971,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.938490215999991,
+            "parameters": {
+              "k1": 0.009454495164914903,
+              "Ea1": 57.79241200547208,
+              "k2": 998.1541216082239,
+              "Ea2": 68.97068722588308,
+              "k3": 136.1409881295785,
+              "Ea3": 122.68794769608482
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 180796.6370126732,
+            "nfev": 81,
+            "continued": false,
+            "optimality": 606.3321815299587,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 9.510057624999718,
+            "parameters": {
+              "k1": 0.009454527307159084,
+              "Ea1": 57.79263479659173,
+              "k2": 902.6366407201157,
+              "Ea2": 69.52696028684319,
+              "k3": 123.08866948186218,
+              "Ea3": 123.24828803835399
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 180797.12514739257,
+            "nfev": 33,
+            "continued": false,
+            "optimality": 1542.689267352914,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 3.5810672030002024,
+            "parameters": {
+              "k1": 0.009454278712273109,
+              "Ea1": 57.79313613592325,
+              "k2": 893.4337254211192,
+              "Ea2": 69.75819190641354,
+              "k3": 121.83022599290445,
+              "Ea3": 123.6033974956919
+            }
+          }
+        ]
+      },
+      "A2": {
+        "parameters": {
+          "k1": 0.009574832106950927,
+          "Ea1": 50.769532147637754,
+          "k2": 995.3308962834018,
+          "Ea2": 24.262098841940034,
+          "k3": 151.05306905432803,
+          "Ea3": 49.959990207307996
+        },
+        "negative_log_likelihood": 177976.57266804212,
+        "training_run_ids": [
+          "A1",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 7.299555403238628,
+        "optimality": 2492.34877687362,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 177981.4614639542,
+            "nfev": 40,
+            "continued": false,
+            "optimality": 752.005493349895,
+            "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+            "elapsed_seconds": 4.372849651999786,
+            "parameters": {
+              "k1": 0.009575108897418298,
+              "Ea1": 50.76684637281057,
+              "k2": 899.8291722188336,
+              "Ea2": 11.350649409378258,
+              "k3": 136.62023852834673,
+              "Ea3": 37.029606024207176
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 177976.57266804212,
+            "nfev": 44,
+            "continued": false,
+            "optimality": 2492.34877687362,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.697450632000255,
+            "parameters": {
+              "k1": 0.009574832106950927,
+              "Ea1": 50.769532147637754,
+              "k2": 995.3308962834018,
+              "Ea2": 24.262098841940034,
+              "k3": 151.05306905432803,
+              "Ea3": 49.959990207307996
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 177983.87222344536,
+            "nfev": 132,
+            "continued": false,
+            "optimality": 71.54585403216247,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 16.006996618000812,
+            "parameters": {
+              "k1": 0.009575229222278922,
+              "Ea1": 50.770254624481915,
+              "k2": 850.1517188290081,
+              "Ea2": 22.627905644348413,
+              "k3": 129.0835778944941,
+              "Ea3": 48.34463976251955
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 177976.80334434035,
+            "nfev": 32,
+            "continued": false,
+            "optimality": 2365.0828838980246,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.290182153000387,
+            "parameters": {
+              "k1": 0.009574827328599501,
+              "Ea1": 50.77072766410809,
+              "k2": 993.7040615264311,
+              "Ea2": 15.102331541963157,
+              "k3": 150.88595900610682,
+              "Ea3": 40.792513985000696
+            }
+          }
+        ]
+      },
+      "A3": {
+        "parameters": {
+          "k1": 0.01024198393437202,
+          "Ea1": 59.25585748961091,
+          "k2": 891.621442746763,
+          "Ea2": 0.9088231957789369,
+          "k3": 139.38090003606564,
+          "Ea3": 29.950412427454502
+        },
+        "negative_log_likelihood": 153190.15417624533,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A4",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [],
+        "successful_start_nll_span": 4.207662981498288,
+        "optimality": 3799.878835973631,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 153194.21158195083,
+            "nfev": 45,
+            "continued": false,
+            "optimality": 41.29777361796637,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.541890931000125,
+            "parameters": {
+              "k1": 0.010242740642428519,
+              "Ea1": 59.25635468490774,
+              "k2": 806.600896378439,
+              "Ea2": 0.00560701350089263,
+              "k3": 126.12069701990286,
+              "Ea3": 29.06769000764792
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 153193.39420549586,
+            "nfev": 44,
+            "continued": false,
+            "optimality": 254.41534244554248,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.046960900000158,
+            "parameters": {
+              "k1": 0.010242693724292788,
+              "Ea1": 59.25660105072023,
+              "k2": 823.0896717468404,
+              "Ea2": 0.611710435421961,
+              "k3": 128.7021378034394,
+              "Ea3": 29.665465599151887
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 153194.36183922683,
+            "nfev": 70,
+            "continued": false,
+            "optimality": 487.27228336383166,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 7.6540690130004805,
+            "parameters": {
+              "k1": 0.010242703925157925,
+              "Ea1": 59.25667297490962,
+              "k2": 807.4949854930996,
+              "Ea2": 2.4026358371925705,
+              "k3": 126.27296154304248,
+              "Ea3": 31.4525305056557
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 153190.15417624533,
+            "nfev": 33,
+            "continued": false,
+            "optimality": 3799.878835973631,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 3.722137042000213,
+            "parameters": {
+              "k1": 0.01024198393437202,
+              "Ea1": 59.25585748961091,
+              "k2": 891.621442746763,
+              "Ea2": 0.9088231957789369,
+              "k3": 139.38090003606564,
+              "Ea3": 29.950412427454502
+            }
+          }
+        ]
+      },
+      "A4": {
+        "parameters": {
+          "k1": 0.010090627544757093,
+          "Ea1": 43.38785474629037,
+          "k2": 998.0416244599704,
+          "Ea2": 34.05592944820044,
+          "k3": 152.99858370820834,
+          "Ea3": 60.52549615795083
+        },
+        "negative_log_likelihood": 176802.78907740663,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A5"
+        ],
+        "n_observations": 196,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "k2"
+        ],
+        "successful_start_nll_span": 5.385955688077956,
+        "optimality": 1997.6812798664828,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 176802.85068285113,
+            "nfev": 36,
+            "continued": false,
+            "optimality": 436.5027934871958,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 3.6729310970004008,
+            "parameters": {
+              "k1": 0.01009091654778227,
+              "Ea1": 43.39079788775535,
+              "k2": 996.3577794504056,
+              "Ea2": 37.914620467858306,
+              "k3": 152.7725347019249,
+              "Ea3": 64.44406438459633
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 176802.78907740663,
+            "nfev": 43,
+            "continued": false,
+            "optimality": 1997.6812798664828,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.880844231000083,
+            "parameters": {
+              "k1": 0.010090627544757093,
+              "Ea1": 43.38785474629037,
+              "k2": 998.0416244599704,
+              "Ea2": 34.05592944820044,
+              "k3": 152.99858370820834,
+              "Ea3": 60.52549615795083
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 176808.1750330947,
+            "nfev": 78,
+            "continued": false,
+            "optimality": 729.5768639472958,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 8.617469321000499,
+            "parameters": {
+              "k1": 0.010090949706742085,
+              "Ea1": 43.39054476915183,
+              "k2": 883.322004628199,
+              "Ea2": 33.21528782626766,
+              "k3": 135.43297136477355,
+              "Ea3": 59.66359789989851
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 176802.93086556636,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 3550.717638235793,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 3.7023241799997777,
+            "parameters": {
+              "k1": 0.010090370240119625,
+              "Ea1": 43.38450625403799,
+              "k2": 993.8156990012538,
+              "Ea2": 36.74470885706858,
+              "k3": 152.41847229922413,
+              "Ea3": 63.234938326392985
+            }
+          }
+        ]
+      },
+      "A5": {
+        "parameters": {
+          "k1": 0.009069696744539616,
+          "Ea1": 41.12600294608392,
+          "k2": 998.3039688729896,
+          "Ea2": 0.3647493036504432,
+          "k3": 121.10740101492351,
+          "Ea3": 11.4981906434253
+        },
+        "negative_log_likelihood": 117311.32409675154,
+        "training_run_ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "n_observations": 192,
+        "n_parameters": 6,
+        "successful_starts": 4,
+        "parameters_at_bounds": [
+          "k2"
+        ],
+        "successful_start_nll_span": 92.63739470326982,
+        "optimality": 468.72223366705606,
+        "failed_simulation_evaluations": 0,
+        "starts": [
+          {
+            "start": 1,
+            "success": true,
+            "negative_log_likelihood": 117311.32409675154,
+            "nfev": 45,
+            "continued": false,
+            "optimality": 468.72223366705606,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 4.410504297999978,
+            "parameters": {
+              "k1": 0.009069696744539616,
+              "Ea1": 41.12600294608392,
+              "k2": 998.3039688729896,
+              "Ea2": 0.3647493036504432,
+              "k3": 121.10740101492351,
+              "Ea3": 11.4981906434253
+            }
+          },
+          {
+            "start": 2,
+            "success": true,
+            "negative_log_likelihood": 117403.96149145481,
+            "nfev": 29,
+            "continued": false,
+            "optimality": 4476.079710015747,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 3.484513508999953,
+            "parameters": {
+              "k1": 0.009069242348718854,
+              "Ea1": 41.12226474815599,
+              "k2": 252.5219108447341,
+              "Ea2": 3.28116372292789,
+              "k3": 30.629907392253337,
+              "Ea3": 14.399558783038833
+            }
+          },
+          {
+            "start": 3,
+            "success": true,
+            "negative_log_likelihood": 117312.63176640689,
+            "nfev": 76,
+            "continued": false,
+            "optimality": 924.0592294175436,
+            "message": "`ftol` termination condition is satisfied.",
+            "elapsed_seconds": 8.69579083500048,
+            "parameters": {
+              "k1": 0.009069848228652552,
+              "Ea1": 41.12505282369136,
+              "k2": 957.6847880990634,
+              "Ea2": 0.016098273731770526,
+              "k3": 116.19871396248267,
+              "Ea3": 11.146054136190163
+            }
+          },
+          {
+            "start": 4,
+            "success": true,
+            "negative_log_likelihood": 117314.39039326992,
+            "nfev": 26,
+            "continued": false,
+            "optimality": 277.0824393836878,
+            "message": "`xtol` termination condition is satisfied.",
+            "elapsed_seconds": 2.3597970999999234,
+            "parameters": {
+              "k1": 0.009069130210049648,
+              "Ea1": 41.106944508193,
+              "k2": 958.0677191494761,
+              "Ea2": 24.239902765218062,
+              "k3": 116.23793820917814,
+              "Ea3": 35.39271948939501
+            }
+          }
+        ]
+      }
+    }
+  },
+  "elapsed_fitting_seconds": 561.7371106820001
+}

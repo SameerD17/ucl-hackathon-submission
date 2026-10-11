@@ -10,7 +10,7 @@ to redraw figures. Missing fitting results are regenerated using the original
 fit/validation scripts. Mismatched likelihoods or source hashes stop the run.
 
 To repeat optimization deliberately, run fit_system_a.py, validate_system_a.py,
-fit_system_b.py and validate_system_b.py before running this script. A clean
+validate_system_a_selection.py, fit_system_b.py and validate_system_b.py before running this script. A clean
 clone WITH the saved results is the intended quick repository-contract path.
 """
 
@@ -28,6 +28,7 @@ import pandas as pd
 
 import fit_system_a as fit_a
 import validate_system_a as cv_a
+import validate_system_a_selection as selection_a
 import fit_system_b as fit_b
 import validate_system_b as cv_b
 import load_system_b as loader
@@ -141,6 +142,8 @@ def main():
     print("Regenerating figures from saved fits, with data/model consistency checks.", flush=True)
     subprocess.run([sys.executable, str(ROOT / "baseline" / "replicate.py")], check=True, cwd=ROOT)
     recreate_system_a()
+    require_files([selection_a.FIT_FILE], selection_a.run_analysis)
+    selection_a.regenerate()
     recreate_system_b()
     # Recompute intervals and their coverage every time, including covariance.
     subprocess.run([sys.executable, str(ROOT / "predict_system_b.py"), "--check-intervals"], check=True, cwd=ROOT)

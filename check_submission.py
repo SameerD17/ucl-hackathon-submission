@@ -31,12 +31,14 @@ RESULTS = ROOT / "results"
 FIT_FILES = [
     "system_A_M1_fit.json", "system_A_M1_starts.csv",
     "system_A_cv_summary.json", "system_A_cv_starts.csv",
+    "system_A_selection_fits.json",
     "system_B_fits.json", "system_B_fit_starts.csv",
     "system_B_cv_summary.json", "system_B_cv_folds.csv", "system_B_cv_starts.csv",
 ]
 FIGURES = [
     "system_B_overview.png", "system_A_M1_fit.png", "system_A_M1_residuals.png",
     "system_A_cv_predictions.png", "system_A_cv_diagnostics.png",
+    "system_A_selection_comparison.png", "system_A_selection_folds.png",
     "system_B_measurements.png", "system_B_model_comparison.png",
     "system_B_leading_fits.png", "system_B_leading_residuals.png",
     "system_B_cv_comparison.png", "system_B_cv_leading_predictions.png",
@@ -82,6 +84,7 @@ def check_files():
     import yaml
     import predict_system_b as predictor
     import suggest_campaign as designer
+    import validate_system_a_selection as selection_a
 
     dependencies = {}
     for line in (ROOT / "requirements.txt").read_text(encoding="utf-8").splitlines():
@@ -93,6 +96,25 @@ def check_files():
         dependencies[name] = actual
     missing = [name for name in FIT_FILES if not (RESULTS / name).is_file()]
     require(not missing, "Missing saved fits for fast reproduction: "+", ".join(missing))
+    reference_fits, reference_runs = selection_a.checked_report()
+    reference_summary = read_json(selection_a.SUMMARY_FILE)
+    require(reference_summary["fit_report_sha256"] == selection_a.digest(RESULTS / selection_a.FIT_FILE),
+            "System A selection summary used different saved fits; run just replicate.")
+    require(reference_summary["n_models"] == 6 and reference_summary["n_fold_fits"] == 30
+            and reference_summary["n_positive_time_measurements"] == 244,
+            "System A selection comparison has missing models, folds or observations.")
+    expected_leader = min(reference_fits["full_fits"],
+                          key=lambda model: (selection_a.aicc(reference_fits["full_fits"][model]), model))
+    require(reference_summary["full_data_AICc_leader"] == expected_leader,
+            "System A full-data model ranking disagrees with the saved likelihoods.")
+    expected_choices = {run["id"]: min(selection_a.MODELS,
+                        key=lambda model: (selection_a.aicc(reference_fits["fold_fits"][model][run["id"]]), model))
+                        for run in reference_runs}
+    choices = reference_summary["fold_selections"]
+    require(len(choices) == 5 and {row["heldout_run_id"]: row["selected_model"] for row in choices} == expected_choices,
+            "System A fold selections disagree with the training-only AICc rule.")
+    require(reference_summary["reference_selected_folds"] == sum(model == "M1" for model in expected_choices.values()),
+            "System A reference-selection count is inconsistent.")
 
     with (ROOT / "submission" / "hypotheses.yaml").open(encoding="utf-8") as handle:
         hypotheses = yaml.safe_load(handle)
@@ -141,7 +163,8 @@ def check_files():
 
     # Validate saved provenance, accepting only LF/CRLF representation changes
     # when comparing source files cloned between Windows and Linux.
-    for name in ["system_B_prediction_summary.json", "system_B_interval_cv_summary.json", "system_B_campaign_summary.json"]:
+    for name in ["system_B_prediction_summary.json", "system_B_interval_cv_summary.json", "system_B_campaign_summary.json",
+                 "system_A_selection_summary.json"]:
         report = read_json(name)
         for relative, digest in report["source_sha256"].items():
             require((ROOT / relative).is_file() and predictor.matches_source(ROOT / relative, digest),
@@ -171,6 +194,8 @@ def check_files():
     return {"hypotheses": len(ranking), "weight_sum": sum(weights.values()), "predictive_weights": weights,
             "prediction_rows": len(predictions), "heldout_runs": int(predictions.run_id.nunique()),
             "campaign_budget": budget, "required_figures": len(FIGURES),
+            "system_A_reference_selected_folds": reference_summary["reference_selected_folds"],
+            "system_A_full_data_AICc_leader": expected_leader,
             "pinned_dependencies": dependencies, "saved_fitting_files": len(FIT_FILES)}
 
 
@@ -191,6 +216,7 @@ def main():
         print("\nSubmission file checks passed.")
         print(f"Hypotheses: {summary['hypotheses']} unique candidates; weights sum to {summary['weight_sum']:.1f}.")
         print("M2/M4 weights match predictions and campaign design.")
+        print(f"System A: all 6 candidates and 30 validation fits checked; training AICc selected M1 in {summary['system_A_reference_selected_folds']}/5 folds.")
         print(f"Predictions: {summary['prediction_rows']} complete, unique rows across {summary['heldout_runs']} runs; intervals valid.")
         budget = summary["campaign_budget"]
         print(f"Campaign: {budget['experiments']} experiments, {budget['A_consumed_g']:.3f}/5 g A, {budget['analytical_samples']}/60 samples; all limits passed.")
